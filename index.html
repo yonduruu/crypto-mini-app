@@ -42,17 +42,11 @@
 <body>
 
   <!-- 외부인 차단 화면 -->
- <div id="auth-error" style="text-align: center; margin-top: 50px; color: #ff3b30;">
-  <h3>🚫 접근 권한이 없습니다.</h3>
-  <p>등록된 사용자만 열람할 수 있습니다.</p>
-  <p style="color: #aaa; font-size: 12px;" id="debug-info"></p>
-</div>
-
-<script>
-  // 기존 코드 아래에 이 줄을 추가해보세요
-  document.getElementById('debug-info').innerText = 
-    "감지된 내 ID: " + (tg.initDataUnsafe?.user?.id || "인식 불가 (일반 브라우저로 열림)");
-</script>
+  <div id="auth-error">
+    <h3>🚫 접근 권한이 없습니다.</h3>
+    <p>등록된 사용자만 열람할 수 있습니다.</p>
+    <p style="color: #ffaa00; font-size: 13px; margin-top: 20px;" id="debug-info"></p>
+  </div>
 
   <!-- 메인 대시보드 화면 -->
   <div id="app" style="display: none;">
@@ -94,19 +88,33 @@
   </div>
 
   <script>
-    const tg = window.Telegram.WebApp;
-    tg.ready();
-    tg.expand(); // 모바일 화면에 꽉 차게 확장
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+    }
 
-    // 🔒 허용할 텔레그램 고유 숫자 ID 목록 (숫자만 입력)
-    const ALLOWED_IDS = [7525770190, 5824849377]; // 여기에 본인 ID(및 상대방 ID)를 넣으세요
+    // 허용된 2인의 숫자 ID
+    const ALLOWED_IDS = [7525770190, 5824849377];
 
-    const currentUserId = tg.initDataUnsafe?.user?.id;
+    // 접속한 유저 ID 가져오기
+    const currentUserId = tg?.initDataUnsafe?.user?.id;
 
-    if (ALLOWED_IDS.includes(currentUserId)) {
+    // 디버그 문구 출력
+    const debugElement = document.getElementById('debug-info');
+    if (currentUserId) {
+      debugElement.innerText = "감지된 내 ID: " + currentUserId;
+    } else {
+      debugElement.innerText = "감지 결과: ID 없음 (일반 브라우저로 접속됨)";
+    }
+
+    // ID 검증
+    if (currentUserId && ALLOWED_IDS.includes(Number(currentUserId))) {
       document.getElementById('app').style.display = 'block';
+      document.getElementById('auth-error').style.display = 'none';
     } else {
       document.getElementById('auth-error').style.display = 'block';
+      document.getElementById('app').style.display = 'none';
     }
   </script>
 </body>
