@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Crypto Dashboard</title>
+  <!-- 텔레그램 웹앱 SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root {
+      --bg: #121214;
+      --card: #1e1e24;
+      --text: #f0f0f2;
+      --sub: #8e8e93;
+      --up: #00c087;
+      --down: #ff3b30;
+    }
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      box-sizing: border-box;
+    }
+    h2 { font-size: 1.05rem; margin: 18px 0 8px 0; color: var(--sub); }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .row:last-child { margin-bottom: 0; }
+    .label { color: var(--sub); font-size: 0.85rem; }
+    .val { font-weight: 600; font-size: 0.95rem; }
+    .up { color: var(--up); }
+    .down { color: var(--down); }
+    #auth-error { display: none; text-align: center; margin-top: 50px; color: var(--down); }
+  </style>
+</head>
+<body>
+
+  <!-- 외부인 차단 화면 -->
+  <div id="auth-error">
+    <h3>🚫 접근 권한이 없습니다.</h3>
+    <p>등록된 사용자만 열람할 수 있습니다.</p>
+  </div>
+
+  <!-- 메인 대시보드 화면 -->
+  <div id="app" style="display: none;">
+    <h2>👤 A님 포지션</h2>
+    <div class="card">
+      <div class="row">
+        <span class="val">BTC/USDT Long</span>
+        <span class="val up">+12.45%</span>
+      </div>
+      <div class="row">
+        <span class="label">진입가 / 현재가</span>
+        <span class="val">91,200 / 92,340</span>
+      </div>
+    </div>
+
+    <h2>👤 B님 포지션</h2>
+    <div class="card">
+      <div class="row">
+        <span class="val">ETH/USDT Long</span>
+        <span class="val up">+4.12%</span>
+      </div>
+      <div class="row">
+        <span class="label">진입가 / 현재가</span>
+        <span class="val">3,120 / 3,250</span>
+      </div>
+    </div>
+
+    <h2>📈 0시~9시 관심 코인 변동</h2>
+    <div class="card">
+      <div class="row">
+        <span>SOL / USDT</span>
+        <span class="val up">+5.80%</span>
+      </div>
+      <div class="row">
+        <span>XRP / USDT</span>
+        <span class="val down">-1.20%</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand(); // 모바일 화면에 꽉 차게 확장
+
+    // 🔒 허용할 텔레그램 고유 숫자 ID 목록 (숫자만 입력)
+    const ALLOWED_IDS = [7525770190, 5824849377]; // 여기에 본인 ID(및 상대방 ID)를 넣으세요
+
+    const currentUserId = tg.initDataUnsafe?.user?.id;
+
+    if (ALLOWED_IDS.includes(currentUserId)) {
+      document.getElementById('app').style.display = 'block';
+    } else {
+      document.getElementById('auth-error').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
