@@ -40,10 +40,11 @@ jobs:
         USER_B_SECRET: ${{ secrets.USER_B_SECRET }}
         USER_B_PASSPHRASE: ${{ secrets.USER_B_PASSPHRASE }}
         
-        # 깃허브 및 텔레그램 봇
+       # 깃허브 및 텔레그램 봇
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPO: ${{ github.repository }} # 👈 이렇게 수정하세요.
+        GITHUB_REPO: ${{ github.repository }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
         python fetch_both.py
         sleep 60
