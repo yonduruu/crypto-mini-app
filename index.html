@@ -14,7 +14,7 @@
       --up: #00c087;
       --down: #ff3b30;
       --badge-bg: #2a2a32;
-      --link: #64b5f6;
+      --ko-title: #79c0ff;
     }
     body {
       margin: 0;
@@ -84,20 +84,29 @@
 
     /* 뉴스 피드 */
     .news-item {
-      padding: 10px 0;
+      padding: 12px 0;
       border-bottom: 1px solid #2a2a32;
     }
     .news-item:last-child { border-bottom: none; padding-bottom: 0; }
     .news-item:first-child { padding-top: 0; }
-    .news-title {
-      font-size: 0.88rem;
-      color: var(--text);
+    .news-link {
       text-decoration: none;
       display: block;
+    }
+    .news-title-ko {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--ko-title);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .news-title-en {
+      font-size: 0.82rem;
+      color: var(--sub);
       line-height: 1.35;
       margin-bottom: 4px;
     }
-    .news-time { font-size: 0.72rem; color: var(--sub); }
+    .news-time { font-size: 0.72rem; color: #6e6e73; }
     
     .spot-tag {
       display: inline-block;
@@ -141,7 +150,7 @@
       <div class="empty" style="grid-column: span 2;">집계 중...</div>
     </div>
 
-    <!-- 3. 실시간 뉴스 속보 -->
+    <!-- 3. 실시간 뉴스 속보 (한국어 번역 포함) -->
     <h2>📰 실시간 코인 속보</h2>
     <div class="card" id="news-content">
       <div class="empty">뉴스를 불러오는 중입니다...</div>
@@ -206,14 +215,18 @@
           moversContainer.innerHTML = '<div class="empty" style="grid-column: span 2;">변동성 데이터를 불러올 수 없습니다.</div>';
         }
 
-        // 3. 실시간 뉴스 렌더링
+        // 3. 실시간 뉴스 렌더링 (한국어 번역 + 원문 영문)
         const newsContainer = document.getElementById('news-content');
         if (data.news && data.news.length > 0) {
           newsContainer.innerHTML = '';
           data.news.forEach(n => {
+            const titleKo = n.title_ko || n.title;
             newsContainer.innerHTML += `
               <div class="news-item">
-                <a href="${n.link}" target="_blank" class="news-title">${n.title}</a>
+                <a href="${n.link}" target="_blank" class="news-link">
+                  <div class="news-title-ko">🇰🇷 ${titleKo}</div>
+                  <div class="news-title-en">${n.title}</div>
+                </a>
                 <span class="news-time">${n.published}</span>
               </div>
             `;
