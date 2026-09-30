@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30 17:06:16",
+  "updated_at": "2026-09-30 17:13:29",
   "accounts": [
     {
       "user": "A",
@@ -10,45 +10,45 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 26.64,
-          "mark_price": 26.73,
-          "pnl_pct": 1.68918918918914,
-          "unrealized_pnl": 1.6829999999999974
+          "mark_price": 26.71,
+          "pnl_pct": 1.31381381381379,
+          "unrealized_pnl": 1.3090000000000053
         },
         {
           "symbol": "BILL/USDT:USDT",
           "side": "LONG",
           "leverage": "5",
           "entry_price": 0.0113,
-          "mark_price": 0.0113,
-          "pnl_pct": 0.0,
-          "unrealized_pnl": 0.0
+          "mark_price": 0.01128,
+          "pnl_pct": -0.8849557522123699,
+          "unrealized_pnl": -0.8839999999999639
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 16474.09085861565,
-          "usd_val": 16466.348035912102
+          "amount": 16472.83285861565,
+          "usd_val": 16464.925898843514
         },
         {
           "coin": "ORDI",
           "amount": 223.634800745,
-          "usd_val": 1026.2601006188052
+          "usd_val": 1025.14192661508
         },
         {
           "coin": "SAHARA",
           "amount": 85031.765085,
-          "usd_val": 782.3772705470851
+          "usd_val": 779.91134935962
         },
         {
           "coin": "AI",
           "amount": 5188.09122,
-          "usd_val": 105.37013267820001
+          "usd_val": 105.2663708538
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 5.252742
+          "usd_val": 5.236758
         }
       ]
     },
@@ -61,21 +61,21 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1692193215339237,
-          "mark_price": 0.1537,
-          "pnl_pct": -9.171128564543091,
-          "unrealized_pnl": -26.382846607670267
+          "mark_price": 0.153,
+          "pnl_pct": -9.58479291070327,
+          "unrealized_pnl": -27.572846607670275
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2569.689569203538,
-          "usd_val": 2568.4818151060126
+          "amount": 2568.499569203538,
+          "usd_val": 2567.2666894103204
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 71.04896525028
+          "usd_val": 70.82503089616
         }
       ]
     }
