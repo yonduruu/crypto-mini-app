@@ -9,6 +9,8 @@ on:
 jobs:
   run-scripts:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 👈 코드를 푸시(업데이트)할 수 있도록 권한 부여
     
     steps:
     - name: 코드 불러오기
@@ -38,9 +40,9 @@ jobs:
         USER_B_SECRET: ${{ secrets.USER_B_SECRET }}
         USER_B_PASSPHRASE: ${{ secrets.USER_B_PASSPHRASE }}
         
-        # 깃허브 및 텔레그램 봇[cite: 4]
+        # 깃허브 및 텔레그램 봇
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPO: ${{ secrets.GITHUB_REPO }}
+        GITHUB_REPO: ${{ github.repository }} # 👈 이렇게 수정하세요.
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       run: |
         python fetch_both.py
