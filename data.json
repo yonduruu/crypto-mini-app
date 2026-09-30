@@ -1,8 +1,70 @@
 {
-  "updated_at": "2026-09-30 17:13:29",
+  "updated_at": "2026-09-30 17:48:49",
+  "market": {
+    "fear_greed": {
+      "value": 71,
+      "classification": "Greed"
+    },
+    "funding_rates": {
+      "BTC": "+0.0027%",
+      "ETH": "+0.0053%"
+    }
+  },
+  "movers_6h": [
+    {
+      "symbol": "KITE",
+      "change_pct": 4.23225423225424,
+      "current_price": 0.14038
+    },
+    {
+      "symbol": "TRIA",
+      "change_pct": -3.6915683704674502,
+      "current_price": 0.004409
+    },
+    {
+      "symbol": "EDGE",
+      "change_pct": -2.691004892736165,
+      "current_price": 0.5171
+    },
+    {
+      "symbol": "SYRUP",
+      "change_pct": -2.6017624842635376,
+      "current_price": 0.2321
+    },
+    {
+      "symbol": "OL",
+      "change_pct": 2.2608954335862004,
+      "current_price": 0.006875
+    },
+    {
+      "symbol": "LPT",
+      "change_pct": 1.918604651162786,
+      "current_price": 1.753
+    },
+    {
+      "symbol": "RAY",
+      "change_pct": -1.6973125884016966,
+      "current_price": 1.8765
+    },
+    {
+      "symbol": "PI",
+      "change_pct": 1.470588235294115,
+      "current_price": 0.09177
+    },
+    {
+      "symbol": "ACU",
+      "change_pct": -1.4561164893191472,
+      "current_price": 0.12317
+    },
+    {
+      "symbol": "ATH",
+      "change_pct": -1.411919225086195,
+      "current_price": 0.006005
+    }
+  ],
   "accounts": [
     {
-      "user": "A",
+      "user": "노꾸리",
       "status": "SUCCESS",
       "positions": [
         {
@@ -10,50 +72,50 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 26.64,
-          "mark_price": 26.71,
-          "pnl_pct": 1.31381381381379,
-          "unrealized_pnl": 1.3090000000000053
+          "mark_price": 26.68,
+          "pnl_pct": 0.75075075075071,
+          "unrealized_pnl": 0.747999999999984
         },
         {
           "symbol": "BILL/USDT:USDT",
           "side": "LONG",
           "leverage": "5",
           "entry_price": 0.0113,
-          "mark_price": 0.01128,
-          "pnl_pct": -0.8849557522123699,
-          "unrealized_pnl": -0.8839999999999639
+          "mark_price": 0.01142,
+          "pnl_pct": 5.3097345132743206,
+          "unrealized_pnl": 5.304000000000014
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 16472.83285861565,
-          "usd_val": 16464.925898843514
+          "amount": 16478.45985861565,
+          "usd_val": 16470.714982482103
         },
         {
           "coin": "ORDI",
           "amount": 223.634800745,
-          "usd_val": 1025.14192661508
+          "usd_val": 1035.42912744935
         },
         {
           "coin": "SAHARA",
           "amount": 85031.765085,
-          "usd_val": 779.91134935962
+          "usd_val": 784.5880964392951
         },
         {
           "coin": "AI",
           "amount": 5188.09122,
-          "usd_val": 105.2663708538
+          "usd_val": 105.99270362460001
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 5.236758
+          "usd_val": 5.253741
         }
       ]
     },
     {
-      "user": "B",
+      "user": "욘두루",
       "status": "SUCCESS",
       "positions": [
         {
@@ -61,21 +123,21 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1692193215339237,
-          "mark_price": 0.153,
-          "pnl_pct": -9.58479291070327,
-          "unrealized_pnl": -27.572846607670275
+          "mark_price": 0.1532,
+          "pnl_pct": -9.46660309751465,
+          "unrealized_pnl": -27.232846607670265
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2568.499569203538,
-          "usd_val": 2567.2666894103204
+          "amount": 2568.8395692035383,
+          "usd_val": 2567.5808378146285
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 70.82503089616
+          "usd_val": 71.24973398156001
         }
       ]
     }
