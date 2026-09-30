@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests ccxt python-dotenv feedparser
 
-- name: 대시보드 데이터 갱신 및 텔레그램 알림 발송
+    - name: 대시보드 데이터 갱신 및 텔레그램 알림 발송
       env:
         # 노꾸리 계정
         USER_A_EXCHANGE: okx
