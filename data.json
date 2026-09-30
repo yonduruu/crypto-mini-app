@@ -1,65 +1,97 @@
 {
-  "updated_at": "2026-09-30 17:48:49",
+  "updated_at": "2026-09-30 19:06:36",
   "market": {
     "fear_greed": {
       "value": 71,
       "classification": "Greed"
     },
     "funding_rates": {
-      "BTC": "+0.0027%",
-      "ETH": "+0.0053%"
+      "BTC": "+0.0039%",
+      "ETH": "+0.0057%"
     }
   },
   "movers_6h": [
     {
-      "symbol": "KITE",
-      "change_pct": 4.23225423225424,
-      "current_price": 0.14038
-    },
-    {
-      "symbol": "TRIA",
-      "change_pct": -3.6915683704674502,
-      "current_price": 0.004409
-    },
-    {
-      "symbol": "EDGE",
-      "change_pct": -2.691004892736165,
-      "current_price": 0.5171
-    },
-    {
-      "symbol": "SYRUP",
-      "change_pct": -2.6017624842635376,
-      "current_price": 0.2321
-    },
-    {
-      "symbol": "OL",
-      "change_pct": 2.2608954335862004,
-      "current_price": 0.006875
+      "symbol": "LIT",
+      "change_pct": 5.246720799500313,
+      "current_price": 3.8755
     },
     {
       "symbol": "LPT",
-      "change_pct": 1.918604651162786,
-      "current_price": 1.753
+      "change_pct": 4.678362573099419,
+      "current_price": 1.79
     },
     {
-      "symbol": "RAY",
-      "change_pct": -1.6973125884016966,
-      "current_price": 1.8765
+      "symbol": "KITE",
+      "change_pct": 3.243163558634913,
+      "current_price": 0.14007
     },
     {
-      "symbol": "PI",
-      "change_pct": 1.470588235294115,
-      "current_price": 0.09177
+      "symbol": "XLM",
+      "change_pct": 3.1949026164761265,
+      "current_price": 0.22836
     },
     {
-      "symbol": "ACU",
-      "change_pct": -1.4561164893191472,
-      "current_price": 0.12317
+      "symbol": "VANA",
+      "change_pct": 2.8282255013242565,
+      "current_price": 1.0871
     },
     {
-      "symbol": "ATH",
-      "change_pct": -1.411919225086195,
-      "current_price": 0.006005
+      "symbol": "LAYER",
+      "change_pct": 2.7709756411908737,
+      "current_price": 0.07974
+    },
+    {
+      "symbol": "APE",
+      "change_pct": 2.673869007427408,
+      "current_price": 0.15206
+    },
+    {
+      "symbol": "PEPE",
+      "change_pct": 2.329411764705888,
+      "current_price": 4.349e-06
+    },
+    {
+      "symbol": "ZKP",
+      "change_pct": 2.3178807947019786,
+      "current_price": 0.04944
+    },
+    {
+      "symbol": "H",
+      "change_pct": 2.2196431162048302,
+      "current_price": 0.07046
+    }
+  ],
+  "news": [
+    {
+      "title": "European stablecoin issuer AllUnity launches USD stablecoin USDAU",
+      "title_ko": "유럽 스테이블코인 발행사 AllUnity, USD 스테이블코인 USDAU 출시",
+      "link": "https://cointelegraph.com/news/allunity-europe-mica-usd-stablecoin-usdau?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "09-30 07:00"
+    },
+    {
+      "title": "Here’s what happened in crypto today",
+      "title_ko": "오늘 암호화폐에서 일어난 일은 다음과 같습니다.",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "09-30 06:00"
+    },
+    {
+      "title": "Kalshi in advanced talks to raise new funding at $40B valuation: Reuters",
+      "title_ko": "$ 40B 밸류에이션으로 신규 자금 조달을 위한 고급 간담회에서 Kalshi: Reuters",
+      "link": "https://cointelegraph.com/news/kalshi-in-advanced-talks-to-raise-new-funding-at-40b-valuation-reuters?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "09-30 05:45"
+    },
+    {
+      "title": "Illinois draft crypto tax rules detail DeFi, stablecoin treatment",
+      "title_ko": "일리노이 초안 암호화 세법 규칙 세부 사항 DeFi, 스테이블 코인 처리",
+      "link": "https://cointelegraph.com/news/illinois-crypto-tax-rules-defi-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "09-30 04:29"
+    },
+    {
+      "title": "Crypto.com AI agent still in ‘stealth mode’ nearly 8 months after Super Bowl debut",
+      "title_ko": "Crypto.com 인공지능 에이전트는 슈퍼볼 데뷔 후 거의 8개월이 지난 지금도 여전히 ‘스텔스 모드’ 에 있습니다.",
+      "link": "https://cointelegraph.com/news/cryptocom-ai-agent-stealth-mode-nearly-8-months-after-super-bowl-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "09-30 03:40"
     }
   ],
   "accounts": [
@@ -68,49 +100,71 @@
       "status": "SUCCESS",
       "positions": [
         {
+          "symbol": "BSP/USDT:USDT",
+          "side": "LONG",
+          "leverage": "5",
+          "entry_price": 32.79,
+          "mark_price": 32.62,
+          "pnl_pct": -2.59225373589511,
+          "unrealized_pnl": -2.584000000000026,
+          "funding_rate": -0.01616586439718
+        },
+        {
+          "symbol": "BX/USDT:USDT",
+          "side": "LONG",
+          "leverage": "5",
+          "entry_price": 114.5,
+          "mark_price": 114.16,
+          "pnl_pct": -1.48471615720525,
+          "unrealized_pnl": -1.482400000000015,
+          "funding_rate": -0.01300521493014
+        },
+        {
           "symbol": "BOT/USDT:USDT",
           "side": "LONG",
           "leverage": "5",
           "entry_price": 26.64,
-          "mark_price": 26.68,
-          "pnl_pct": 0.75075075075071,
-          "unrealized_pnl": 0.747999999999984
+          "mark_price": 26.75,
+          "pnl_pct": 2.06456456456461,
+          "unrealized_pnl": 2.0569999999999893,
+          "funding_rate": 0.15819754831429
         },
         {
           "symbol": "BILL/USDT:USDT",
           "side": "LONG",
           "leverage": "5",
           "entry_price": 0.0113,
-          "mark_price": 0.01142,
-          "pnl_pct": 5.3097345132743206,
-          "unrealized_pnl": 5.304000000000014
+          "mark_price": 0.01139,
+          "pnl_pct": 3.9823008849557704,
+          "unrealized_pnl": 3.978000000000068,
+          "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 16478.45985861565,
-          "usd_val": 16470.714982482103
+          "amount": 16474.02493301565,
+          "usd_val": 16465.952660798474
         },
         {
           "coin": "ORDI",
           "amount": 223.634800745,
-          "usd_val": 1035.42912744935
+          "usd_val": 1042.8090758739352
         },
         {
           "coin": "SAHARA",
           "amount": 85031.765085,
-          "usd_val": 784.5880964392951
+          "usd_val": 787.56420821727
         },
         {
           "coin": "AI",
           "amount": 5188.09122,
-          "usd_val": 105.99270362460001
+          "usd_val": 106.40775092220001
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 5.253741
+          "usd_val": 5.25474
         }
       ]
     },
@@ -123,21 +177,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1692193215339237,
-          "mark_price": 0.1532,
-          "pnl_pct": -9.46660309751465,
-          "unrealized_pnl": -27.232846607670265
+          "mark_price": 0.1549,
+          "pnl_pct": -8.461989685411341,
+          "unrealized_pnl": -24.342846607670253,
+          "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2568.8395692035383,
-          "usd_val": 2567.5808378146285
+          "amount": 2571.729569203538,
+          "usd_val": 2570.4437044189367
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 71.24973398156001
+          "usd_val": 71.51999958136
         }
       ]
     }

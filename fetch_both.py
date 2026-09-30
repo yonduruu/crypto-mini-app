@@ -4,6 +4,7 @@ import base64
 from datetime import datetime
 import requests
 import ccxt
+import feedparser
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -22,7 +23,7 @@ def create_okx_client(api_key=None, secret=None, passphrase=None):
     return ccxt.okx(params)
 
 def get_market_overview(public_client):
-    """공포/탐욕 지수 및 BTC/ETH 펀딩비 수집"""
+    """공포 & 탐욕 지수 및 BTC / ETH 펀딩비 수집"""
     overview = {
         "fear_greed": {"value": 50, "classification": "Neutral"},
         "funding_rates": {}
@@ -59,7 +60,6 @@ def get_top_movers_6h(public_client, limit=10):
             if sym.endswith('/USDT:USDT') and t.get('baseVolume', 0) > 100000
         ]
 
-        # 거래대금 상위 35개 후보군 추려 6시간 변동률 계산
         swap_tickers.sort(key=lambda x: float(x.get('quoteVolume') or 0.0), reverse=True)
         candidates = swap_tickers[:35]
 
@@ -67,11 +67,10 @@ def get_top_movers_6h(public_client, limit=10):
         for t in candidates:
             sym = t['symbol']
             try:
-                # 1시간봉 7개 조회 (현재봉 + 최근 6개봉)
                 ohlcv = public_client.fetch_ohlcv(sym, timeframe='1h', limit=7)
                 if len(ohlcv) >= 7:
-                    price_6h_ago = ohlcv[0][1]  # 6시간 전 시가 (Open)
-                    current_price = ohlcv[-1][4] # 현재가 (Close)
+                    price_6h_ago = ohlcv[0][1]
+                    current_price = ohlcv[-1][4]
                     if price_6h_ago > 0:
                         change_pct = ((current_price - price_6h_ago) / price_6h_ago) * 100
                         clean_sym = sym.split('/')[0]
@@ -83,7 +82,6 @@ def get_top_movers_6h(public_client, limit=10):
             except Exception:
                 continue
 
-        # 절대 변동폭(절댓값) 기준 내림차순 정렬 후 10개 추출
         movers.sort(key=lambda x: abs(x['change_pct']), reverse=True)
         return movers[:limit]
 
@@ -91,7 +89,91 @@ def get_top_movers_6h(public_client, limit=10):
         print(f"⚠️ 변동성 랭킹 수집 실패: {e}")
         return []
 
+def translate_to_korean(text):
+    """무료 오픈 번역 API (MyMemory) 기반 안정적인 한국어 번역"""
+    if not text:
+        return ""
+    
+    # 1. MyMemory 오픈 번역 API
+    try:
+        url = "https://api.mymemory.translated.net/get"
+        params = {
+            "q": text,
+            "langpair": "en|ko"
+        }
+        res = requests.get(url, params=params, timeout=5)
+        if res.status_code == 200:
+            data = res.json()
+            translated = data.get("responseData", {}).get("translatedText")
+            # 정상적인 번역 결과이고 원문과 다른 경우
+            if translated and translated.strip() and translated.lower() != text.lower():
+                return translated
+    except Exception as e:
+        pass
+
+    # 2. 백업: Google Web 번역
+    try:
+        url = "https://translate.googleapis.com/translate_a/single"
+        params = {
+            "client": "gtx",
+            "sl": "auto",
+            "tl": "ko",
+            "dt": "t",
+            "q": text
+        }
+        headers = {"User-Agent": "Mozilla/5.0"}
+        res = requests.get(url, params=params, headers=headers, timeout=5)
+        if res.status_code == 200:
+            data = res.json()
+            translated = "".join([part[0] for part in data[0] if part and part[0]])
+            if translated:
+                return translated
+    except Exception:
+        pass
+
+    return text
+
+def get_crypto_news(limit=5):
+    """암호화폐 글로벌 속보 수집 및 실시간 한국어 번역"""
+    news_list = []
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    }
+    
+    feed_urls = [
+        "https://cointelegraph.com/rss",
+        "https://decrypt.co/feed"
+    ]
+    
+    for url in feed_urls:
+        try:
+            res = requests.get(url, headers=headers, timeout=6)
+            if res.status_code == 200:
+                feed = feedparser.parse(res.content)
+                for entry in feed.entries[:limit]:
+                    published_parsed = entry.get('published_parsed')
+                    time_str = datetime(*published_parsed[:6]).strftime("%m-%d %H:%M") if published_parsed else ""
+                    raw_title = entry.get('title', '')
+
+                    # 한국어 번역 실행
+                    title_ko = translate_to_korean(raw_title)
+
+                    news_list.append({
+                        "title": raw_title,
+                        "title_ko": title_ko,
+                        "link": entry.get('link', ''),
+                        "published": time_str
+                    })
+                if news_list:
+                    break
+        except Exception as e:
+            print(f"⚠️ RSS ({url}) 수집 에러: {e}")
+            continue
+
+    return news_list[:limit]
+
 def get_account_data(client, user_name):
+    """노꾸리/욘두루 선물 포지션, 현물 자산 및 개별 펀딩비 수집"""
     if not client:
         return {"user": user_name, "status": "FAIL", "positions": [], "spot": []}
 
@@ -121,6 +203,14 @@ def get_account_data(client, user_name):
                 unrealized_pnl = float(item.get('unrealizedPnl') or info.get('upl') or 0.0)
                 leverage = info.get('lever', '1')
 
+                # [추가] 진입 중인 코인의 실시간 펀딩비 개별 조회
+                funding_rate = 0.0
+                try:
+                    fund_info = client.fetch_funding_rate(symbol)
+                    funding_rate = float(fund_info.get('fundingRate') or 0.0) * 100
+                except Exception as e:
+                    print(f"⚠️ {symbol} 펀딩비 조회 실패: {e}")
+
                 active_positions.append({
                     'symbol': symbol,
                     'side': side,
@@ -128,7 +218,8 @@ def get_account_data(client, user_name):
                     'entry_price': entry_price,
                     'mark_price': mark_price,
                     'pnl_pct': pnl_pct,
-                    'unrealized_pnl': unrealized_pnl
+                    'unrealized_pnl': unrealized_pnl,
+                    'funding_rate': funding_rate  # 펀딩비 데이터 추가
                 })
 
         bal_res = client.private_get_account_balance()
@@ -159,7 +250,9 @@ def get_account_data(client, user_name):
     except Exception as e:
         return {"user": user_name, "status": "ERROR", "message": str(e), "positions": [], "spot": []}
 
+    
 def upload_to_github(data_content, file_path="data.json"):
+    """GitHub API를 통한 data.json 원격 자동 업로드"""
     token = os.getenv("GITHUB_TOKEN")
     repo = os.getenv("GITHUB_REPO")
 
@@ -211,7 +304,12 @@ if __name__ == "__main__":
     print("2. 최근 6시간 급변동 코인 TOP 10 계산 중...")
     top_movers = get_top_movers_6h(public_client, limit=10)
 
-    print("3. 노꾸리 & 욘두루 계좌 데이터 수집 중...")
+    print("3. 최신 코인 속보 뉴스 수집 및 한국어 번역 중...")
+    latest_news = get_crypto_news(limit=5)
+    for idx, n in enumerate(latest_news, 1):
+        print(f"   [{idx}] 번역: {n['title_ko']}")
+
+    print("4. 노꾸리 & 욘두루 계좌 데이터 수집 중...")
     res_a = get_account_data(client_a, "노꾸리")
     res_b = get_account_data(client_b, "욘두루")
 
@@ -219,6 +317,7 @@ if __name__ == "__main__":
         "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "market": market_overview,
         "movers_6h": top_movers,
+        "news": latest_news,
         "accounts": [res_a, res_b]
     }
 
