@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Crypto Dashboard</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root {
+      --bg: #121214;
+      --card: #1e1e24;
+      --text: #f0f0f2;
+      --sub: #8e8e93;
+      --up: #00c087;
+      --down: #ff3b30;
+      --badge-bg: #2a2a32;
+    }
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .header h1 { font-size: 1.15rem; margin: 0; }
+    .updated-time { font-size: 0.75rem; color: var(--sub); }
+    h2 { font-size: 0.95rem; margin: 20px 0 8px 0; color: var(--sub); letter-spacing: 0.5px; }
+    
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+    .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .row:last-child { margin-bottom: 0; }
+    .label { color: var(--sub); font-size: 0.85rem; }
+    .val { font-weight: 600; font-size: 0.95rem; }
+    .up { color: var(--up); }
+    .down { color: var(--down); }
+    .empty { color: var(--sub); font-size: 0.85rem; text-align: center; padding: 10px 0; }
+
+    /* 상단 시장 지표 */
+    .market-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .mini-card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+    }
+    .mini-title { font-size: 0.75rem; color: var(--sub); margin-bottom: 4px; }
+    .mini-val { font-size: 1.05rem; font-weight: bold; }
+
+    /* 6시간 급변동 그리드 */
+    .movers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .mover-item {
+      background: var(--card);
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mover-symbol { font-weight: bold; font-size: 0.9rem; }
+    .mover-rate { font-weight: bold; font-size: 0.88rem; }
+    
+    .spot-tag {
+      display: inline-block;
+      background: var(--badge-bg);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      margin: 2px 4px 2px 0;
+    }
+    #auth-error { display: none; text-align: center; margin-top: 50px; color: var(--down); }
+  </style>
+</head>
+<body>
+
+  <div id="auth-error">
+    <h3>🚫 접근 권한이 없습니다.</h3>
+    <p>등록된 사용자만 열람할 수 있습니다.</p>
+  </div>
+
+  <div id="app" style="display: none;">
+    <div class="header">
+      <h1>📊 Portfolio Monitor</h1>
+      <span class="updated-time" id="updated-at">갱신중...</span>
+    </div>
+
+    <!-- 시장 지표 -->
+    <div class="market-grid">
+      <div class="mini-card">
+        <span class="mini-title">공포 & 탐욕 지수</span>
+        <span class="mini-val" id="fng-val">--</span>
+      </div>
+      <div class="mini-card">
+        <span class="mini-title">BTC / ETH 펀딩비</span>
+        <span class="mini-val" style="font-size: 0.88rem;" id="funding-val">-- / --</span>
+      </div>
+    </div>
+
+    <!-- 6시간 급변동 코인 TOP 10 -->
+    <h2>🔥 최근 6시간 급변동 코인 TOP 10</h2>
+    <div class="movers-grid" id="movers-content">
+      <div class="empty" style="grid-column: span 2;">집계 중...</div>
+    </div>
+
+    <!-- 계좌별 현황 -->
+    <div id="dashboard-content">데이터를 불러오는 중입니다...</div>
+  </div>
+
+  <script>
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+    }
+
+    const ALLOWED_IDS = [7525770190, 5824849377];
+    const currentUserId = tg?.initDataUnsafe?.user?.id;
+
+    if (currentUserId && ALLOWED_IDS.includes(Number(currentUserId))) {
+      document.getElementById('app').style.display = 'block';
+      loadDashboardData();
+    } else {
+      document.getElementById('auth-error').style.display = 'block';
+    }
+
+    async function loadDashboardData() {
+      try {
+        const res = await fetch('data.json?t=' + new Date().getTime());
+        const data = await res.json();
+
+        document.getElementById('updated-at').innerText = data.updated_at || '';
+
+        // 1. 공포/탐욕 & 펀딩비
+        if (data.market) {
+          const fng = data.market.fear_greed;
+          const fngEl = document.getElementById('fng-val');
+          fngEl.innerText = `${fng.value} (${fng.classification})`;
+          if (fng.value >= 60) fngEl.className = 'mini-val up';
+          else if (fng.value <= 40) fngEl.className = 'mini-val down';
+
+          const btcFund = data.market.funding_rates?.BTC || '--';
+          const ethFund = data.market.funding_rates?.ETH || '--';
+          document.getElementById('funding-val').innerText = `${btcFund} / ${ethFund}`;
+        }
+
+        // 2. 6시간 급변동 코인 렌더링
+        const moversContainer = document.getElementById('movers-content');
+        if (data.movers_6h && data.movers_6h.length > 0) {
+          moversContainer.innerHTML = '';
+          data.movers_6h.forEach(m => {
+            const sign = m.change_pct >= 0 ? '+' : '';
+            const colorClass = m.change_pct >= 0 ? 'up' : 'down';
+            moversContainer.innerHTML += `
+              <div class="mover-item">
+                <span class="mover-symbol">${m.symbol}</span>
+                <span class="mover-rate ${colorClass}">${sign}${m.change_pct.toFixed(2)}%</span>
+              </div>
+            `;
+          });
+        } else {
+          moversContainer.innerHTML = '<div class="empty" style="grid-column: span 2;">변동성 데이터를 불러올 수 없습니다.</div>';
+        }
+
+        // 3. 노꾸리 & 욘두루 계좌 렌더링
+        const container = document.getElementById('dashboard-content');
+        container.innerHTML = '';
+
+        data.accounts.forEach(acc => {
+          let userHtml = `<h2>👤 ${acc.user} 계정</h2>`;
+
+          if (acc.positions && acc.positions.length > 0) {
+            acc.positions.forEach(p => {
+              const sign = p.pnl_pct >= 0 ? '+' : '';
+              const colorClass = p.pnl_pct >= 0 ? 'up' : 'down';
+              userHtml += `
+                <div class="card">
+                  <div class="row">
+                    <span class="val">${p.symbol} (${p.side} ${p.leverage}x)</span>
+                    <span class="val ${colorClass}">${sign}${p.pnl_pct.toFixed(2)}%</span>
+                  </div>
+                  <div class="row">
+                    <span class="label">진입 / 현재가</span>
+                    <span class="val">${p.entry_price.toLocaleString()} / ${p.mark_price.toLocaleString()}</span>
+                  </div>
+                  <div class="row">
+                    <span class="label">미실현 손익</span>
+                    <span class="val ${colorClass}">${sign}${p.unrealized_pnl.toFixed(2)} USDT</span>
+                  </div>
+                </div>
+              `;
+            });
+          } else {
+            userHtml += `
+              <div class="card">
+                <div class="empty">현재 진입 중인 선물 포지션이 없습니다.</div>
+              </div>
+            `;
+          }
+
+          if (acc.spot && acc.spot.length > 0) {
+            userHtml += `<div class="card" style="padding-top: 10px; padding-bottom: 10px;">
+              <div class="row" style="margin-bottom: 4px;">
+                <span class="label">보유 현물</span>
+              </div>
+              <div>`;
+            acc.spot.forEach(s => {
+              userHtml += `<span class="spot-tag">${s.coin}: ${s.amount.toFixed(2)} ($${s.usd_val.toFixed(1)})</span>`;
+            });
+            userHtml += `</div></div>`;
+          }
+
+          container.innerHTML += userHtml;
+        });
+
+      } catch (err) {
+        document.getElementById('dashboard-content').innerHTML = 
+          `<div class="empty" style="color: var(--down);">데이터 로딩 실패: ${err.message}</div>`;
+      }
+    }
+  </script>
+</body>
+</html>
