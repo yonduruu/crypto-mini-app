@@ -1,9 +1,9 @@
-name: 3Hour Auto Update
+name: 4Hour Auto Update
 
 on:
   schedule:
-    # 3시간마다 실행 (한국시간 오전 9시, 12시, 오후 3시, 6시, 9시, 자정, 새벽 3시, 6시)
-    - cron: '0 */3 * * *'
+    # 4시간마다 실행 (한국시간 00:50, 04:50, 08:50, 12:50, 16:50, 20:50)
+    - cron: '50 3,7,11,15,19,23 * * *'
   workflow_dispatch: # 깃허브에서 수동 버튼으로 테스트할 수 있게 해줌
 
 jobs:
@@ -34,13 +34,13 @@ jobs:
         USER_A_SECRET: ${{ secrets.USER_A_SECRET }}
         USER_A_PASSPHRASE: ${{ secrets.USER_A_PASSPHRASE }}
         
-        # 욘두루 계정[cite: 4]
+        # 욘두루 계정
         USER_B_EXCHANGE: okx
         USER_B_API_KEY: ${{ secrets.USER_B_API_KEY }}
         USER_B_SECRET: ${{ secrets.USER_B_SECRET }}
         USER_B_PASSPHRASE: ${{ secrets.USER_B_PASSPHRASE }}
         
-       # 깃허브 및 텔레그램 봇
+        # 깃허브 및 텔레그램 봇
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPO: ${{ github.repository }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
