@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def send_reminder():
-    bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    bot_token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     if not bot_token:
         print("❌ 에러: TELEGRAM_BOT_TOKEN 환경변수를 찾을 수 없습니다. 깃허브 Secrets 설정을 확인하세요.")
         return

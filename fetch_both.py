@@ -1,13 +1,16 @@
 import os
 import json
 import base64
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import requests
 import ccxt
 import feedparser
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# 한국 표준시 (UTC+9) 설정
+KST = timezone(timedelta(hours=9))
 
 def create_okx_client(api_key=None, secret=None, passphrase=None):
     params = {
@@ -152,7 +155,13 @@ def get_crypto_news(limit=5):
                 feed = feedparser.parse(res.content)
                 for entry in feed.entries[:limit]:
                     published_parsed = entry.get('published_parsed')
-                    time_str = datetime(*published_parsed[:6]).strftime("%m-%d %H:%M") if published_parsed else ""
+                    if published_parsed:
+                        utc_dt = datetime(*published_parsed[:6])
+                        kst_dt = utc_dt + timedelta(hours=9)
+                        time_str = f"{utc_dt.strftime('%m-%d %H:%M')} (한국시간 {kst_dt.strftime('%H:%M')})"
+                    else:
+                        time_str = ""
+
                     raw_title = entry.get('title', '')
 
                     # 한국어 번역 실행
@@ -203,7 +212,7 @@ def get_account_data(client, user_name):
                 unrealized_pnl = float(item.get('unrealizedPnl') or info.get('upl') or 0.0)
                 leverage = info.get('lever', '1')
 
-                # [추가] 진입 중인 코인의 실시간 펀딩비 개별 조회
+                # 진입 중인 코인의 실시간 펀딩비 개별 조회
                 funding_rate = 0.0
                 try:
                     fund_info = client.fetch_funding_rate(symbol)
@@ -219,7 +228,7 @@ def get_account_data(client, user_name):
                     'mark_price': mark_price,
                     'pnl_pct': pnl_pct,
                     'unrealized_pnl': unrealized_pnl,
-                    'funding_rate': funding_rate  # 펀딩비 데이터 추가
+                    'funding_rate': funding_rate
                 })
 
         bal_res = client.private_get_account_balance()
@@ -273,7 +282,7 @@ def upload_to_github(data_content, file_path="data.json"):
 
     encoded_content = base64.b64encode(data_content.encode("utf-8")).decode("utf-8")
     payload = {
-        "message": f"update: {file_path} auto update ({datetime.now().strftime('%H:%M:%S')})",
+        "message": f"update: {file_path} auto update ({datetime.now(KST).strftime('%H:%M:%S')})",
         "content": encoded_content
     }
     if sha:
@@ -314,7 +323,7 @@ if __name__ == "__main__":
     res_b = get_account_data(client_b, "욘두루")
 
     dashboard_data = {
-        "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "market": market_overview,
         "movers_6h": top_movers,
         "news": latest_news,
