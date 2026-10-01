@@ -1,4 +1,4 @@
-name: 4Hour Auto Update
+name: Auto Update
 
 on:
   workflow_dispatch: # 외부 크론(cron-job.org) 및 깃허브 수동 실행 전용
