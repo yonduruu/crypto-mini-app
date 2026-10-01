@@ -144,11 +144,8 @@
       </div>
     </div>
 
-    <!-- 2. 6시간 급변동 코인 TOP 10 -->
-    <h2>🔥 최근 6시간 급변동 코인 TOP 10</h2>
-    <div class="movers-grid" id="movers-content">
-      <div class="empty" style="grid-column: span 2;">집계 중...</div>
-    </div>
+    <!-- 2. 계좌 현황 -->
+    <div id="dashboard-content">데이터를 불러오는 중입니다...</div>
 
     <!-- 3. 실시간 뉴스 속보 (한글 번역 포함) -->
     <h2>📰 실시간 코인 속보</h2>
@@ -156,8 +153,11 @@
       <div class="empty">뉴스를 불러오는 중입니다...</div>
     </div>
 
-    <!-- 4. 계좌 현황 -->
-    <div id="dashboard-content">데이터를 불러오는 중입니다...</div>
+    <!-- 4. 6시간 급변동 코인 TOP 10 -->
+    <h2>🔥 최근 6시간 급변동 코인 TOP 10</h2>
+    <div class="movers-grid" id="movers-content">
+      <div class="empty" style="grid-column: span 2;">집계 중...</div>
+    </div>
   </div>
 
   <script>
@@ -235,7 +235,7 @@
           newsContainer.innerHTML = '<div class="empty">최근 뉴스가 없습니다.</div>';
         }
 
-// 4. 노꾸리 & 욘두루 계좌
+        // 4. 노꾸리 & 욘두루 계좌
         const container = document.getElementById('dashboard-content');
         container.innerHTML = '';
 
@@ -247,7 +247,7 @@
               const sign = p.pnl_pct >= 0 ? '+' : '';
               const colorClass = p.pnl_pct >= 0 ? 'up' : 'down';
               
-              // 👇 [수정됨] 펀딩비를 소수점 4자리까지 표시하는 변수 추가
+              // 펀딩비를 소수점 4자리까지 표시하는 변수 추가
               const fundText = p.funding_rate !== undefined ? p.funding_rate.toFixed(4) + '%' : '--';
 
               userHtml += `
@@ -264,7 +264,7 @@
                     <span class="label">미실현 손익</span>
                     <span class="val ${colorClass}">${sign}${p.unrealized_pnl.toFixed(2)} USDT</span>
                   </div>
-                  <!-- 👇 [수정됨] 카드 맨 아랫줄에 현재 펀딩비 추가 -->
+                  <!-- 카드 맨 아랫줄에 현재 펀딩비 추가 -->
                   <div class="row" style="margin-top: 4px; padding-top: 4px; border-top: 1px dashed #2a2a32;">
                     <span class="label">현재 펀딩비</span>
                     <span class="val" style="color: #79c0ff; font-size: 0.9rem;">${fundText}</span>

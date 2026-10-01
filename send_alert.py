@@ -21,10 +21,10 @@ def send_reminder():
     kst = timezone(timedelta(hours=9))
     now = datetime.now(kst).strftime("%Y년 %m월 %d일 %H:%M")
 
-    # 2. 날씨 정보 안전하게 가져오기 (에러 페이지나 HTML 태그가 오면 무시)
+    # 2. 날씨 정보 안전하게 가져오기 (&m 옵션으로 섭씨 온도 강제 지정)
     weather = "날씨 정보 없음"
     try:
-        w_res = requests.get("https://wttr.in/Geumcheon-gu?format=%c+%t", timeout=5)
+        w_res = requests.get("https://wttr.in/Geumcheon-gu?format=%c+%t&m", timeout=5)
         if w_res.status_code == 200 and "<" not in w_res.text and "Unknown" not in w_res.text:
             weather = w_res.text.strip()
     except Exception as e:
