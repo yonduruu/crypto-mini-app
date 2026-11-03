@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 04:51:17",
+  "updated_at": "2026-11-04 08:50:55",
   "market": {
     "fear_greed": {
       "value": 26,
@@ -12,86 +12,86 @@
   },
   "movers_6h": [
     {
-      "symbol": "H",
-      "change_pct": -5.4333999636561865,
-      "current_price": 0.05204
+      "symbol": "BTW",
+      "change_pct": -8.101675552170597,
+      "current_price": 0.9653
+    },
+    {
+      "symbol": "PUMP",
+      "change_pct": 3.056665882906182,
+      "current_price": 0.004383
     },
     {
       "symbol": "MRVL",
-      "change_pct": -3.7390567636260967,
-      "current_price": 170.43
-    },
-    {
-      "symbol": "BTW",
-      "change_pct": 3.671638677375614,
-      "current_price": 0.9939
+      "change_pct": 2.3224124651934455,
+      "current_price": 172.71
     },
     {
       "symbol": "KITE",
-      "change_pct": 3.6114246028301045,
-      "current_price": 0.11935
+      "change_pct": -1.6676250718803944,
+      "current_price": 0.1197
     },
     {
-      "symbol": "LIT",
-      "change_pct": 2.8440112279835916,
-      "current_price": 3.3341
-    },
-    {
-      "symbol": "MSTR",
-      "change_pct": 2.5804010594021918,
-      "current_price": 135.56
-    },
-    {
-      "symbol": "ACU",
-      "change_pct": 2.432522492502504,
-      "current_price": 0.12296
-    },
-    {
-      "symbol": "ZKP",
-      "change_pct": -2.4313153415998077,
-      "current_price": 0.04013
-    },
-    {
-      "symbol": "VANA",
-      "change_pct": -1.7776096822995462,
-      "current_price": 0.7791
+      "symbol": "SKHYNIX",
+      "change_pct": 1.449139865370232,
+      "current_price": 1085.1
     },
     {
       "symbol": "ZBT",
-      "change_pct": -1.684717208182906,
-      "current_price": 0.06536
+      "change_pct": 1.159066646332159,
+      "current_price": 0.06633
+    },
+    {
+      "symbol": "RAY",
+      "change_pct": -1.0636934512367004,
+      "current_price": 1.544
+    },
+    {
+      "symbol": "MSTR",
+      "change_pct": -1.0132672401224776,
+      "current_price": 135.79
+    },
+    {
+      "symbol": "LIT",
+      "change_pct": 0.9632589765000529,
+      "current_price": 3.3855
+    },
+    {
+      "symbol": "KGEN",
+      "change_pct": 0.9400370317618685,
+      "current_price": 0.07087
     }
   ],
   "news": [
+    {
+      "title": "US midterms election 2026 live: What they mean for crypto",
+      "title_ko": "미국 중간 선거 2026 LIVE: 암호화폐에 대한 의미",
+      "link": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-03 23:01 (한국시간 08:01)"
+    },
+    {
+      "title": "Here’s what happened in crypto today",
+      "title_ko": "오늘 암호화폐에서 일어난 일은 다음과 같습니다.",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-03 22:39 (한국시간 07:39)"
+    },
+    {
+      "title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
+      "title_ko": "SpaceX, 역외 거래 붐에도 불구하고 OKXICE에 토큰화된 주식 상장 차단",
+      "link": "https://cointelegraph.com/news/spacex-tokenization-okxice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-03 21:47 (한국시간 06:47)"
+    },
+    {
+      "title": "CFTC clears stock perpetual futures for trading on US exchanges",
+      "title_ko": "CFTC는 미국 거래소에서 거래하기 위해 주식 영구 선물을 청산합니다.",
+      "link": "https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-03 20:24 (한국시간 05:24)"
+    },
     {
       "title": "US midterms: Prediction markets favor Democrats in key crypto races",
       "title_ko": "미국 중간선거: 예측 시장은 주요 암호화폐 경쟁에서 민주당을 선호합니다",
       "link": "https://cointelegraph.com/news/us-midterm-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-03 19:38 (한국시간 04:38)"
-    },
-    {
-      "title": "Wall Street killed Bitcoin’s wild rallies: 10x’s Markus Thielen",
-      "title_ko": "월스트리트는 비트코인의 야생 집회를 죽였다: 10배의 마르쿠스 틸렌",
-      "link": "https://cointelegraph.com/magazine/wall-street-killed-bitcoins-wild-rallies-markus-thielen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-03 16:47 (한국시간 01:47)"
-    },
-    {
-      "title": "Binance traces $6.3B hack to fake job interviews, compromised AI tool",
-      "title_ko": "Binance는 $ 6.3B 해킹을 추적하여 가짜 취업 면접, 손상된 AI 도구",
-      "link": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-03 16:44 (한국시간 01:44)"
-    },
-    {
-      "title": "Bitcoin price defends $76K lows as analysts see stocks pricing in ‘political gridlock’",
-      "title_ko": "비트코인 가격은 애널리스트가 ‘정치적 교착 상태‘ 에서 주식 가격을 볼 때 $ 76,000의 저점을 방어합니다",
-      "link": "https://cointelegraph.com/markets/bitcoin-price-defends-76k-lows-as-analysis-sees-stocks-pricing-in-political-gridlock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-03 15:44 (한국시간 00:44)"
-    },
-    {
-      "title": "What’s at stake for crypto as the US votes in the 2026 midterms?",
-      "title_ko": "2026년 중간고사에서 미국이 투표할 때 암호화폐에 어떤 문제가 있습니까?",
-      "link": "https://cointelegraph.com/news/us-midterms-2026-stake-crypto-election-day?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-03 13:53 (한국시간 22:53)"
     }
   ],
   "accounts": [
@@ -104,9 +104,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1226,
-          "mark_price": 0.1235,
-          "pnl_pct": 0.7340946166394701,
-          "unrealized_pnl": 7.298999999999984,
+          "mark_price": 0.1204,
+          "pnl_pct": -1.7944535073409498,
+          "unrealized_pnl": -17.84200000000006,
           "funding_rate": 0.005
         },
         {
@@ -114,9 +114,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.375,
-          "mark_price": 0.3436,
-          "pnl_pct": -25.119999999999997,
-          "unrealized_pnl": -75.35999999999996,
+          "mark_price": 0.3517,
+          "pnl_pct": -18.63999999999998,
+          "unrealized_pnl": -55.91999999999997,
           "funding_rate": 0.005
         },
         {
@@ -124,9 +124,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.2816416679705838,
-          "mark_price": 0.2348,
-          "pnl_pct": -49.89496224913303,
-          "unrealized_pnl": -74.83893291660175,
+          "mark_price": 0.2383,
+          "pnl_pct": -46.166820715367976,
+          "unrealized_pnl": -69.24698291660175,
           "funding_rate": 0.005
         },
         {
@@ -134,9 +134,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.0618370007449047,
-          "mark_price": 0.05217,
-          "pnl_pct": -46.89910876232743,
-          "unrealized_pnl": -35.69056675018813,
+          "mark_price": 0.05218,
+          "pnl_pct": -46.85059411957537,
+          "unrealized_pnl": -35.65364675018815,
           "funding_rate": 0.005
         },
         {
@@ -144,9 +144,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 6.422849065326052,
-          "mark_price": 5.816,
-          "pnl_pct": -28.344854089853012,
-          "unrealized_pnl": -84.3520200803213,
+          "mark_price": 5.869,
+          "pnl_pct": -25.869317168732348,
+          "unrealized_pnl": -76.9850200803213,
           "funding_rate": 0.0
         },
         {
@@ -154,9 +154,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.0502889389920429,
-          "mark_price": 0.04085,
-          "pnl_pct": -18.76941367471762,
-          "unrealized_pnl": -179.3398408488151,
+          "mark_price": 0.04101,
+          "pnl_pct": -18.45125225949007,
+          "unrealized_pnl": -176.2998408488151,
           "funding_rate": 0.005
         },
         {
@@ -164,27 +164,27 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 45.44674008810573,
-          "mark_price": 43.74,
-          "pnl_pct": -18.77736538194968,
-          "unrealized_pnl": -19.286162995594697,
-          "funding_rate": 0.0
+          "mark_price": 43.94,
+          "pnl_pct": -16.57698753733133,
+          "unrealized_pnl": -17.026162995594746,
+          "funding_rate": -0.13376599804254
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 8225.075845428953,
-          "usd_val": 8215.946011240527
+          "amount": 8237.347245637953,
+          "usd_val": 8226.968188108449
         },
         {
           "coin": "SATS",
           "amount": 196377914366.016,
-          "usd_val": 1785.4679974158173
+          "usd_val": 1790.5738231893338
         },
         {
           "coin": "ORDI",
           "amount": 478.416663845,
-          "usd_val": 1642.88282364373
+          "usd_val": 1647.188573618335
         },
         {
           "coin": "AI",
@@ -194,17 +194,17 @@
         {
           "coin": "SAHARA",
           "amount": 47268.043505,
-          "usd_val": 323.45522170471503
+          "usd_val": 324.967799096875
         },
         {
           "coin": "NMR",
           "amount": 22.269716540325,
-          "usd_val": 214.03424566906358
+          "usd_val": 214.7691463148943
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 3.464532
+          "usd_val": 3.487509
         }
       ]
     },
@@ -217,22 +217,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1386430863578281,
-          "mark_price": 0.1235,
-          "pnl_pct": -10.92235231892116,
-          "unrealized_pnl": -74.80684660767082,
+          "mark_price": 0.1204,
+          "pnl_pct": -13.15830946719115,
+          "unrealized_pnl": -90.12084660767084,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2518.393169008269,
-          "usd_val": 2515.57256865898
+          "amount": 2503.048713908269,
+          "usd_val": 2499.894872528744
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 52.84078569804
+          "usd_val": 53.087885675
         }
       ]
     }
