@@ -1,68 +1,86 @@
 {
-  "updated_at": "2026-11-07 00:50:56",
+  "updated_at": "2026-11-07 04:51:00",
   "market": {
     "fear_greed": {
       "value": 28,
       "classification": "Fear"
     },
     "funding_rates": {
-      "BTC": "+0.0042%",
-      "ETH": "+0.0013%"
+      "BTC": "+0.0094%",
+      "ETH": "+0.0060%"
     }
   },
   "movers_6h": [
     {
-      "symbol": "W",
-      "change_pct": 6.733053170107817,
-      "current_price": 0.011683
+      "symbol": "PURR",
+      "change_pct": -4.889278666958997,
+      "current_price": 8.676
     },
     {
-      "symbol": "WAL",
-      "change_pct": 4.426629487626352,
-      "current_price": 0.02996
+      "symbol": "MRVL",
+      "change_pct": -4.4902995818194364,
+      "current_price": 139.32
     },
     {
-      "symbol": "KGEN",
-      "change_pct": 4.285507456203836,
-      "current_price": 0.07203
-    },
-    {
-      "symbol": "RAY",
-      "change_pct": 3.6229783780650395,
-      "current_price": 1.7876
-    },
-    {
-      "symbol": "BTW",
-      "change_pct": 3.35763795121074,
-      "current_price": 1.1482
-    },
-    {
-      "symbol": "EDGE",
-      "change_pct": 3.0526992287917767,
-      "current_price": 0.3207
-    },
-    {
-      "symbol": "PUMP",
-      "change_pct": 2.6937738246505765,
-      "current_price": 0.004041
-    },
-    {
-      "symbol": "APT",
-      "change_pct": 2.5487256371814246,
-      "current_price": 0.6156
+      "symbol": "H",
+      "change_pct": 3.75024163928089,
+      "current_price": 0.05367
     },
     {
       "symbol": "LIT",
-      "change_pct": 2.247803695849737,
-      "current_price": 3.3752
+      "change_pct": -3.2201302129157234,
+      "current_price": 3.3
     },
     {
-      "symbol": "SNX",
-      "change_pct": 2.2010707911957224,
-      "current_price": 0.1718
+      "symbol": "BTW",
+      "change_pct": 3.002132196162038,
+      "current_price": 1.2077
+    },
+    {
+      "symbol": "SYRUP",
+      "change_pct": 2.6855123674911843,
+      "current_price": 0.1453
+    },
+    {
+      "symbol": "RAY",
+      "change_pct": 2.235646135606608,
+      "current_price": 1.8109
+    },
+    {
+      "symbol": "EDGE",
+      "change_pct": 2.124286620164865,
+      "current_price": 0.3221
+    },
+    {
+      "symbol": "KGEN",
+      "change_pct": 2.1016756603237847,
+      "current_price": 0.0719
+    },
+    {
+      "symbol": "OL",
+      "change_pct": -1.8139841688654328,
+      "current_price": 0.005954
     }
   ],
   "news": [
+    {
+      "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout",
+      "title_ko": "러시아, 11월 17일 출시를 앞두고 암호화폐 거래 규칙 확정",
+      "link": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-06 18:47 (한국시간 03:47)"
+    },
+    {
+      "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
+      "title_ko": "STRIVE, 10월에 비트코인 15,124개 매수, 최고 국고 보유자 마감",
+      "link": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-06 18:22 (한국시간 03:22)"
+    },
+    {
+      "title": "Bitcoin price dips under $75K as crypto markets miss tech-stock rebound",
+      "title_ko": "암호화폐 시장이 기술주 반등을 놓치면서 비트코인 가격이 $ 75K 미만으로 하락",
+      "link": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-06 17:49 (한국시간 02:49)"
+    },
     {
       "title": "What Democrats’ US midterm sweep means for the CLARITY Act",
       "title_ko": "민주당의 미국 중간선거가 명확성 법에 미치는 의미",
@@ -74,24 +92,6 @@
       "title_ko": "나이지리아는 새로운 암호화폐 라이선스 규칙을 설정하고 알고리즘 스테이블코인을 금지합니다",
       "link": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-06 13:57 (한국시간 22:57)"
-    },
-    {
-      "title": "Here’s what happened in crypto today",
-      "title_ko": "오늘 암호화폐에서 일어난 일은 다음과 같습니다.",
-      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-06 13:33 (한국시간 22:33)"
-    },
-    {
-      "title": "Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolved",
-      "title_ko": "이더리움 개발자는 스마트 계약 위험이 해결될 때까지 Glamsterdam을 Hoodi에서 포크하지 않습니다.",
-      "link": "https://cointelegraph.com/news/ethereum-devs-fork-glamsterdam-hoodi-smart-contract-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-06 13:23 (한국시간 22:23)"
-    },
-    {
-      "title": "Solana’s Shanghai event halted over unauthorized promotion: Report",
-      "title_ko": "Solana의 상하이 이벤트가 무단 프로모션으로 중단됨: 신고",
-      "link": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-06 12:15 (한국시간 21:15)"
     }
   ],
   "accounts": [
@@ -104,9 +104,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1226,
-          "mark_price": 0.0988,
-          "pnl_pct": -19.41272430668842,
-          "unrealized_pnl": -193.018,
+          "mark_price": 0.0981,
+          "pnl_pct": -19.9836867862969,
+          "unrealized_pnl": -198.69499999999996,
           "funding_rate": 0.005
         },
         {
@@ -114,19 +114,19 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.375,
-          "mark_price": 0.3454,
-          "pnl_pct": -23.68000000000002,
-          "unrealized_pnl": -35.52000000000002,
-          "funding_rate": 3.062111808e-05
+          "mark_price": 0.3455,
+          "pnl_pct": -23.60000000000003,
+          "unrealized_pnl": -35.400000000000034,
+          "funding_rate": 0.005
         },
         {
           "symbol": "COAI/USDT:USDT",
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.2573992657924157,
-          "mark_price": 0.2263,
-          "pnl_pct": -36.24633391630912,
-          "unrealized_pnl": -108.73547291660218,
+          "mark_price": 0.2272,
+          "pnl_pct": -35.19737987532227,
+          "unrealized_pnl": -105.58871291660213,
           "funding_rate": 0.005
         },
         {
@@ -134,9 +134,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.0530349127129075,
-          "mark_price": 0.04793,
-          "pnl_pct": -28.8767103693097,
-          "unrealized_pnl": -79.72852675018933,
+          "mark_price": 0.04779,
+          "pnl_pct": -29.66864153034237,
+          "unrealized_pnl": -81.91504675018936,
           "funding_rate": 0.005
         },
         {
@@ -144,9 +144,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 5.795197475988096,
-          "mark_price": 5.062,
-          "pnl_pct": -37.95543529065421,
-          "unrealized_pnl": -226.55802008032157,
+          "mark_price": 5.347,
+          "pnl_pct": -23.20183968769812,
+          "unrealized_pnl": -138.49302008032151,
           "funding_rate": 0.0
         },
         {
@@ -154,9 +154,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.044739103909584,
-          "mark_price": 0.04161,
-          "pnl_pct": -6.99411395433355,
-          "unrealized_pnl": -136.74184084882077,
+          "mark_price": 0.04168,
+          "pnl_pct": -6.83765127653502,
+          "unrealized_pnl": -133.68284084882075,
           "funding_rate": 0.005
         },
         {
@@ -164,47 +164,47 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 45.44674008810573,
-          "mark_price": 42.09,
-          "pnl_pct": -36.93048260005172,
-          "unrealized_pnl": -37.93116299559468,
+          "mark_price": 42.53,
+          "pnl_pct": -32.089651341891226,
+          "unrealized_pnl": -32.95916299559471,
           "funding_rate": 0.0
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 7357.83283113552,
-          "usd_val": 7348.267648455044
+          "amount": 7449.300472021783,
+          "usd_val": 7438.573479342072
         },
         {
           "coin": "SATS",
           "amount": 196377914366.016,
-          "usd_val": 1724.5908439623524
+          "usd_val": 1718.8958844457381
         },
         {
           "coin": "ORDI",
           "amount": 478.416663845,
-          "usd_val": 1597.433240578455
+          "usd_val": 1576.86132403312
         },
         {
           "coin": "AI",
           "amount": 53594.9157,
-          "usd_val": 816.786515268
+          "usd_val": 815.7146169539999
         },
         {
           "coin": "SAHARA",
           "amount": 120021.693985,
-          "usd_val": 791.90313691303
+          "usd_val": 792.62326707694
         },
         {
           "coin": "NMR",
           "amount": 22.269716540325,
-          "usd_val": 210.1370452745067
+          "usd_val": 209.95888754218413
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 3.425571
+          "usd_val": 3.448548
         }
       ]
     },
@@ -217,22 +217,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1386430863578281,
-          "mark_price": 0.0988,
-          "pnl_pct": -28.737881855136933,
-          "unrealized_pnl": -196.82484660767082,
+          "mark_price": 0.0981,
+          "pnl_pct": -29.24277540474628,
+          "unrealized_pnl": -200.2828466076708,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2395.903399008269,
-          "usd_val": 2392.764765555568
+          "amount": 2392.421118908269,
+          "usd_val": 2388.952108285852
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 50.94892649944
+          "usd_val": 50.99525774512
         }
       ]
     }
