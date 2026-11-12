@@ -1,68 +1,86 @@
 {
-  "updated_at": "2026-11-12 12:51:03",
+  "updated_at": "2026-11-12 16:51:03",
   "market": {
     "fear_greed": {
       "value": 28,
       "classification": "Fear"
     },
     "funding_rates": {
-      "BTC": "+0.0100%",
-      "ETH": "+0.0025%"
+      "BTC": "+0.0096%",
+      "ETH": "+0.0036%"
     }
   },
   "movers_6h": [
     {
+      "symbol": "ZHONGJI",
+      "change_pct": -3.9078855547801807,
+      "current_price": 82.62
+    },
+    {
       "symbol": "KGEN",
-      "change_pct": 11.636089469716014,
-      "current_price": 0.08884
+      "change_pct": 3.3760972316002733,
+      "current_price": 0.09186
     },
     {
       "symbol": "H",
-      "change_pct": -7.525736599219028,
-      "current_price": 0.02605
+      "change_pct": -3.142748958727758,
+      "current_price": 0.02558
     },
     {
-      "symbol": "APE",
-      "change_pct": -5.375909458367022,
-      "current_price": 0.09364
+      "symbol": "MSTR",
+      "change_pct": -2.779160444665678,
+      "current_price": 117.19
     },
     {
-      "symbol": "UNI",
-      "change_pct": -5.327430926576098,
-      "current_price": 6.202
-    },
-    {
-      "symbol": "ACU",
-      "change_pct": -4.451973839728933,
-      "current_price": 0.12126
-    },
-    {
-      "symbol": "ZHONGJI",
-      "change_pct": -3.4794396746497953,
-      "current_price": 85.44
+      "symbol": "RAY",
+      "change_pct": -2.657807308970094,
+      "current_price": 1.5822
     },
     {
       "symbol": "OL",
-      "change_pct": -3.3769063180828023,
-      "current_price": 0.004435
+      "change_pct": 2.442850739578678,
+      "current_price": 0.004571
     },
     {
-      "symbol": "MRVL",
-      "change_pct": -3.2416444838805196,
-      "current_price": 163.57
+      "symbol": "SKHYNIX",
+      "change_pct": -2.337176690557806,
+      "current_price": 940.2
     },
     {
-      "symbol": "SYRUP",
-      "change_pct": -3.1946508172362544,
-      "current_price": 0.1303
+      "symbol": "ZKP",
+      "change_pct": -2.094717668488149,
+      "current_price": 0.03225
     },
     {
-      "symbol": "APT",
-      "change_pct": -3.0502599653379465,
-      "current_price": 0.5594
+      "symbol": "APE",
+      "change_pct": -1.6499206768905257,
+      "current_price": 0.09299
+    },
+    {
+      "symbol": "FLOKI",
+      "change_pct": -1.6377649325626211,
+      "current_price": 2.042e-05
     }
   ],
   "news": [
+    {
+      "title": "Here’s what happened in crypto today",
+      "title_ko": "오늘의 암호화폐 소식입니다.",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-12 06:00 (한국시간 15:00)"
+    },
+    {
+      "title": "South Korea to permit crypto withdrawal freezes during hacking threats",
+      "title_ko": "해킹 위협 시 암호화폐 인출 동결을 허용하는 한국",
+      "link": "https://cointelegraph.com/news/south-korea-crypto-withdrawal-freezes-suspected-hacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-12 05:54 (한국시간 14:54)"
+    },
+    {
+      "title": "Binance CSO unwittingly foreshadowed $6.3B hack tactic months before attack",
+      "title_ko": "바이낸스 CSO, 공격 몇 달 전에 63억 달러 해킹 수법을 무심코 예고하다",
+      "link": "https://cointelegraph.com/news/binance-cso-foreshadowed-6b-hack-tactic-months-before-attack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-12 05:07 (한국시간 14:07)"
+    },
     {
       "title": "MSCI confirms Strategy’s removal from indexes at end of November",
       "title_ko": "MSCI, 11월 말 Strategy를 지수에서 제외할 것임을 확인",
@@ -74,24 +92,6 @@
       "title_ko": "Sui 생태계에서 최근에 철수하는 Suiet 지갑 서비스 종료",
       "link": "https://cointelegraph.com/news/suiet-wallet-shut-down-latest-exit-sui-ecosystem?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-11 23:18 (한국시간 08:18)"
-    },
-    {
-      "title": "Nvidia preparing to oust CEO Jensen Huang after affairs: WSJ",
-      "title_ko": "Nvidia, 불륜 스캔들로 젠슨 황 CEO 퇴출 준비 중: WSJ",
-      "link": "https://cointelegraph.com/news/nvidia-preparing-to-oust-ceo-jensen-huang-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-11 22:44 (한국시간 07:44)"
-    },
-    {
-      "title": "Here’s what happened in crypto today",
-      "title_ko": "오늘의 암호화폐 소식입니다.",
-      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-11 22:15 (한국시간 07:15)"
-    },
-    {
-      "title": "Uncalled US House races could send more crypto allies to Congress",
-      "title_ko": "미국 하원 선거 결과가 아직 확정되지 않은 가운데, 암호화폐 지지자가 더 많이 의회에 진출할 가능성이 있습니다.",
-      "link": "https://cointelegraph.com/news/uncalled-midterm-races-add-more-crypto-supporters-congress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-11 22:05 (한국시간 07:05)"
     }
   ],
   "accounts": [
@@ -104,19 +104,19 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.5720372736625515,
-          "mark_price": 0.54,
-          "pnl_pct": -16.80167104711283,
-          "unrealized_pnl": -23.066837037037075,
-          "funding_rate": 0.005
+          "mark_price": 0.5333,
+          "pnl_pct": -20.31542809152829,
+          "unrealized_pnl": -27.8908370370371,
+          "funding_rate": 0.00430597061366
         },
         {
           "symbol": "AT/USDT:USDT",
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1065036324786325,
-          "mark_price": 0.08942,
-          "pnl_pct": -16.0404223602983,
-          "unrealized_pnl": -319.8056000000003,
+          "mark_price": 0.09113,
+          "pnl_pct": -14.43484332021902,
+          "unrealized_pnl": -287.7944000000003,
           "funding_rate": 0.005
         },
         {
@@ -124,9 +124,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.2573992657924157,
-          "mark_price": 0.2085,
-          "pnl_pct": -56.992313838048844,
-          "unrealized_pnl": -170.9713929166022,
+          "mark_price": 0.207,
+          "pnl_pct": -58.740570573026915,
+          "unrealized_pnl": -176.2159929166022,
           "funding_rate": 0.005
         },
         {
@@ -134,9 +134,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.0492177356329259,
-          "mark_price": 0.04265,
-          "pnl_pct": -40.03273747847219,
-          "unrealized_pnl": -230.6260367501929,
+          "mark_price": 0.04237,
+          "pnl_pct": -41.739439319176256,
+          "unrealized_pnl": -240.45823675019298,
           "funding_rate": 0.005
         },
         {
@@ -144,9 +144,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 5.795197475988096,
-          "mark_price": 5.759,
-          "pnl_pct": -1.8738348160564002,
-          "unrealized_pnl": -2.7872056510833643,
+          "mark_price": 5.733,
+          "pnl_pct": -3.21977687106295,
+          "unrealized_pnl": -4.789205651083417,
           "funding_rate": 0.0
         },
         {
@@ -154,9 +154,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.044739103909584,
-          "mark_price": 0.04106,
-          "pnl_pct": -8.22346356560768,
-          "unrealized_pnl": -80.20446522893124,
+          "mark_price": 0.04117,
+          "pnl_pct": -7.97759364335285,
+          "unrealized_pnl": -77.80646522893126,
           "funding_rate": 0.005
         },
         {
@@ -164,47 +164,47 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 45.44674008810573,
-          "mark_price": 40.37,
-          "pnl_pct": -55.85373206377026,
-          "unrealized_pnl": -57.367162995594754,
-          "funding_rate": -0.02803605297109
+          "mark_price": 40.23,
+          "pnl_pct": -57.393996555003156,
+          "unrealized_pnl": -58.949162995594754,
+          "funding_rate": 0.0
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 3701.671391991784,
-          "usd_val": 3696.8962358961144
+          "amount": 3712.3369346227837,
+          "usd_val": 3707.6222667158127
         },
         {
           "coin": "SATS",
           "amount": 428210861000.8288,
-          "usd_val": 3618.381775457003
-        },
-        {
-          "coin": "ORDI",
-          "amount": 478.416663845,
-          "usd_val": 1511.7966577502002
+          "usd_val": 3596.1148106849605
         },
         {
           "coin": "NMR",
           "amount": 169.811742417125,
-          "usd_val": 1502.8339203915561
+          "usd_val": 1516.7584832697605
+        },
+        {
+          "coin": "ORDI",
+          "amount": 478.416663845,
+          "usd_val": 1504.14199112868
         },
         {
           "coin": "AI",
           "amount": 53594.9157,
-          "usd_val": 733.178446776
+          "usd_val": 727.8189552059999
         },
         {
           "coin": "SAHARA",
           "amount": 120021.693985,
-          "usd_val": 720.970315767895
+          "usd_val": 717.96977341827
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 3.1488479999999996
+          "usd_val": 3.142854
         }
       ]
     },
@@ -217,22 +217,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1181159963624914,
-          "mark_price": 0.08942,
-          "pnl_pct": -24.294758750901952,
-          "unrealized_pnl": -263.429246607671,
+          "mark_price": 0.09113,
+          "pnl_pct": -22.84702935550989,
+          "unrealized_pnl": -247.731446607671,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2328.116476608269,
-          "usd_val": 2325.113206353444
+          "amount": 2343.7732511882687,
+          "usd_val": 2340.7966591592594
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 46.385298799960005
+          "usd_val": 46.192251942960006
         }
       ]
     }
