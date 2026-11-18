@@ -1,68 +1,74 @@
 {
-  "updated_at": "2026-11-18 12:50:59",
+  "updated_at": "2026-11-18 16:50:56",
   "market": {
     "fear_greed": {
       "value": 11,
       "classification": "Extreme Fear"
     },
     "funding_rates": {
-      "BTC": "+0.0024%",
-      "ETH": "+0.0040%"
+      "BTC": "+0.0026%",
+      "ETH": "-0.0003%"
     }
   },
   "movers_6h": [
     {
-      "symbol": "BTW",
-      "change_pct": 8.353336533845415,
-      "current_price": 0.4514
+      "symbol": "ZKP",
+      "change_pct": 17.138364779874202,
+      "current_price": 0.03725
     },
     {
-      "symbol": "ZKP",
-      "change_pct": 4.891304347826076,
-      "current_price": 0.03281
+      "symbol": "SYRUP",
+      "change_pct": -4.56273764258555,
+      "current_price": 0.1004
+    },
+    {
+      "symbol": "BTW",
+      "change_pct": -4.354290569243844,
+      "current_price": 0.4503
     },
     {
       "symbol": "ZHONGJI",
-      "change_pct": 3.695479777954002,
-      "current_price": 65.38
+      "change_pct": -3.8382352941176463,
+      "current_price": 65.39
     },
     {
-      "symbol": "SKHYNIX",
-      "change_pct": 3.0532515927395094,
-      "current_price": 857.3
+      "symbol": "KITE",
+      "change_pct": 3.221528861154442,
+      "current_price": 0.13233
     },
     {
-      "symbol": "H",
-      "change_pct": 2.981029810298099,
-      "current_price": 0.0152
+      "symbol": "KGEN",
+      "change_pct": 3.1800329405802588,
+      "current_price": 0.08144
     },
     {
-      "symbol": "PI",
-      "change_pct": 2.7362766493201267,
-      "current_price": 0.0612
+      "symbol": "EDGE",
+      "change_pct": 3.063457330415762,
+      "current_price": 0.2826
     },
     {
-      "symbol": "MRVL",
-      "change_pct": 2.4233067060482067,
-      "current_price": 152.58
+      "symbol": "XCU",
+      "change_pct": -2.95252861808464,
+      "current_price": 5.8836
     },
     {
-      "symbol": "RAY",
-      "change_pct": 2.2626660108214467,
-      "current_price": 1.4553
+      "symbol": "PUMP",
+      "change_pct": -2.804078659868909,
+      "current_price": 0.002669
     },
     {
-      "symbol": "LIT",
-      "change_pct": 2.08458893182544,
-      "current_price": 2.8795
-    },
-    {
-      "symbol": "MSTR",
-      "change_pct": 1.912737799834568,
-      "current_price": 98.57
+      "symbol": "ZBT",
+      "change_pct": 2.6854714064915037,
+      "current_price": 0.05315
     }
   ],
   "news": [
+    {
+      "title": "Here’s what happened in crypto today",
+      "title_ko": "오늘의 암호화폐 소식입니다.",
+      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-18 06:00 (한국시간 15:00)"
+    },
     {
       "title": "Ledger hardware implant saga reaches Dubai’s Virgin Megastore",
       "title_ko": "레저 하드웨어 임플란트 사가가 두바이 버진 메가스토어에 상륙하다",
@@ -71,15 +77,9 @@
     },
     {
       "title": "Nvidia board rejects Huang comeback despite record $116B quarter",
-      "title_ko": "Nvidia 이사회, 사상 최고인 1,160억 달러의 분기 실적에도 불구하고 황 CEO의 복귀를 거부",
+      "title_ko": "Nvidia 이사회, 사상 최고인 1,160억 달러의 분기 매출에도 불구하고 황 회장의 복귀 거부",
       "link": "https://cointelegraph.com/markets/nvidia-board-rejects-huang-comeback-amid-record-116b-quarter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-18 00:16 (한국시간 09:16)"
-    },
-    {
-      "title": "Here’s what happened in crypto today",
-      "title_ko": "오늘의 암호화폐 소식입니다.",
-      "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-17 22:37 (한국시간 07:37)"
     },
     {
       "title": "CFTC halts some Kalshi Trump mention markets over manipulation concerns",
@@ -89,7 +89,7 @@
     },
     {
       "title": "Maple Finance CEO targets up to $15B in assets by the end of 2027",
-      "title_ko": "Maple Finance CEO, 2027년 말까지 자산 150억 달러 목표",
+      "title_ko": "Maple Finance CEO, 2027년 말까지 자산 규모 150억 달러 달성 목표",
       "link": "https://cointelegraph.com/news/maple-finance-15b-assets-target-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-17 21:56 (한국시간 06:56)"
     }
@@ -104,9 +104,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.5720372736625515,
-          "mark_price": 0.4426,
-          "pnl_pct": -67.88225852861508,
-          "unrealized_pnl": -93.1948370370371,
+          "mark_price": 0.4395,
+          "pnl_pct": -69.50802671334463,
+          "unrealized_pnl": -95.4268370370371,
           "funding_rate": 0.005
         },
         {
@@ -114,9 +114,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1065036324786325,
-          "mark_price": 0.08994,
-          "pnl_pct": -15.552176102496409,
-          "unrealized_pnl": -155.0356000000001,
+          "mark_price": 0.08839,
+          "pnl_pct": -17.00752552479051,
+          "unrealized_pnl": -169.5436000000002,
           "funding_rate": 0.005
         },
         {
@@ -124,9 +124,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.2573992657924157,
-          "mark_price": 0.1811,
-          "pnl_pct": -88.92713686364816,
-          "unrealized_pnl": -266.77275291660214,
+          "mark_price": 0.1836,
+          "pnl_pct": -86.01337563868474,
+          "unrealized_pnl": -258.0317529166021,
           "funding_rate": 0.005
         },
         {
@@ -134,9 +134,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.0492177356329259,
-          "mark_price": 0.03867,
-          "pnl_pct": -64.29228507133689,
-          "unrealized_pnl": -370.3837367501928,
+          "mark_price": 0.03903,
+          "pnl_pct": -62.097954133288845,
+          "unrealized_pnl": -357.7423367501928,
           "funding_rate": 0.005
         },
         {
@@ -144,9 +144,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 5.795197475988096,
-          "mark_price": 4.452,
-          "pnl_pct": -69.53330658119172,
-          "unrealized_pnl": -103.4262056510834,
+          "mark_price": 4.492,
+          "pnl_pct": -67.46262649656633,
+          "unrealized_pnl": -100.3462056510834,
           "funding_rate": 0.0
         },
         {
@@ -154,9 +154,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.044739103909584,
-          "mark_price": 0.03883,
-          "pnl_pct": -13.20791744404641,
-          "unrealized_pnl": -128.81846522893113,
+          "mark_price": 0.03922,
+          "pnl_pct": -12.3361968105975,
+          "unrealized_pnl": -120.31646522893125,
           "funding_rate": 0.005
         },
         {
@@ -164,47 +164,47 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 45.44674008810573,
-          "mark_price": 43.16,
-          "pnl_pct": -25.15846113134324,
-          "unrealized_pnl": -25.84016299559476,
-          "funding_rate": 0.0
+          "mark_price": 43.0,
+          "pnl_pct": -26.918763407037922,
+          "unrealized_pnl": -27.64816299559472,
+          "funding_rate": 0.05015089579033
         }
       ],
       "spot": [
         {
           "coin": "SATS",
           "amount": 428210861000.8288,
-          "usd_val": 3277.525930100344
+          "usd_val": 3319.0623836174236
         },
         {
           "coin": "USDT",
-          "amount": 2337.4090353433535,
-          "usd_val": 2334.7210149527086
+          "amount": 2352.304095908853,
+          "usd_val": 2349.6224692395167
         },
         {
           "coin": "NMR",
           "amount": 169.811742417125,
-          "usd_val": 1350.6825991858123
+          "usd_val": 1353.2297753220691
         },
         {
           "coin": "ORDI",
           "amount": 478.416663845,
-          "usd_val": 1323.30049219527
+          "usd_val": 1331.9119921444799
         },
         {
           "coin": "AI",
           "amount": 53594.9157,
-          "usd_val": 680.65542939
+          "usd_val": 687.0868192739999
         },
         {
           "coin": "SAHARA",
           "amount": 120021.693985,
-          "usd_val": 665.760336534795
+          "usd_val": 674.0418334197601
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 3.241755
+          "usd_val": 3.2067900000000003
         }
       ]
     },
@@ -217,22 +217,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1181159963624914,
-          "mark_price": 0.08994,
-          "pnl_pct": -23.85451355464236,
-          "unrealized_pnl": -129.32782330383552,
+          "mark_price": 0.08839,
+          "pnl_pct": -25.16678288964687,
+          "unrealized_pnl": -136.44232330383554,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2354.0196665432686,
-          "usd_val": 2351.3125439267437
+          "amount": 2346.8845551482686,
+          "usd_val": 2344.2325756009513
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 42.83323663116
+          "usd_val": 43.36604595648
         }
       ]
     }
