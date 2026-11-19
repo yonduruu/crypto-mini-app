@@ -1,97 +1,97 @@
 {
-  "updated_at": "2026-11-20 00:51:05",
+  "updated_at": "2026-11-20 04:51:09",
   "market": {
     "fear_greed": {
       "value": 10,
       "classification": "Extreme Fear"
     },
     "funding_rates": {
-      "BTC": "-0.0023%",
-      "ETH": "-0.0012%"
+      "BTC": "+0.0079%",
+      "ETH": "+0.0017%"
     }
   },
   "movers_6h": [
     {
-      "symbol": "BTW",
-      "change_pct": -8.256578947368425,
-      "current_price": 0.5578
-    },
-    {
-      "symbol": "SYRUP",
-      "change_pct": 5.458290422245106,
-      "current_price": 0.1024
+      "symbol": "ZHONGJI",
+      "change_pct": -7.4468085106383075,
+      "current_price": 63.51
     },
     {
       "symbol": "MSTR",
-      "change_pct": -5.217484465395334,
-      "current_price": 88.47
+      "change_pct": -7.364958081290457,
+      "current_price": 87.29
     },
     {
-      "symbol": "UNI",
-      "change_pct": -5.185327443825611,
-      "current_price": 4.937
-    },
-    {
-      "symbol": "APT",
-      "change_pct": -4.809019788311085,
-      "current_price": 0.4137
-    },
-    {
-      "symbol": "SNX",
-      "change_pct": 3.499999999999996,
-      "current_price": 0.1656
-    },
-    {
-      "symbol": "PI",
-      "change_pct": -3.1173807035876,
-      "current_price": 0.05563
-    },
-    {
-      "symbol": "RAY",
-      "change_pct": -3.1120185876223188,
-      "current_price": 1.3761
+      "symbol": "BTW",
+      "change_pct": 6.762075134168147,
+      "current_price": 0.5968
     },
     {
       "symbol": "MRVL",
-      "change_pct": -2.9750861383514318,
-      "current_price": 146.43
+      "change_pct": -6.74297743569502,
+      "current_price": 141.76
+    },
+    {
+      "symbol": "ZKP",
+      "change_pct": 6.611570247933879,
+      "current_price": 0.03354
+    },
+    {
+      "symbol": "SKHYNIX",
+      "change_pct": -4.827508960573467,
+      "current_price": 849.7
+    },
+    {
+      "symbol": "LIT",
+      "change_pct": -3.9800825347020985,
+      "current_price": 2.8154
+    },
+    {
+      "symbol": "EDGE",
+      "change_pct": -3.734290843806111,
+      "current_price": 0.2681
     },
     {
       "symbol": "XLM",
-      "change_pct": -2.9723068000580106,
-      "current_price": 0.13384
+      "change_pct": -3.625443230335056,
+      "current_price": 0.13318
+    },
+    {
+      "symbol": "APT",
+      "change_pct": -3.1595940959409567,
+      "current_price": 0.4199
     }
   ],
   "news": [
+    {
+      "title": "Ethereum’s Glamsterdam upgrade could slip to May 2027 over compatibility concerns",
+      "title_ko": "이더리움의 글램스터담(Glamsterdam) 업그레이드가 호환성 문제로 인해 2027년 5월로 연기될 수 있습니다.",
+      "link": "https://cointelegraph.com/news/ethereum-glamsterdam-could-slip-to-may-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-19 18:20 (한국시간 03:20)"
+    },
+    {
+      "title": "Why higher rates could slow Bitcoin buying at treasury firms",
+      "title_ko": "금리가 상승하면 재무 기업의 비트코인 매수가 둔화될 수 있는 이유",
+      "link": "https://cointelegraph.com/news/why-higher-rates-could-slow-bitcoin-buying-at-treasury-firms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-19 18:09 (한국시간 03:09)"
+    },
+    {
+      "title": "Bitcoin price ignores Anthropic debut as ANT share price dips below $100",
+      "title_ko": "비트코인 가격은 ANT 주가가 100달러 아래로 하락한 가운데 안트로픽(Anthropic)의 데뷔를 무시했습니다.",
+      "link": "https://cointelegraph.com/markets/bitcoin-price-ignores-anthropic-debut-ant-share-price-dips-below-100?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-19 18:06 (한국시간 03:06)"
+    },
+    {
+      "title": "Anthropic shares open at $111.50, 34.3% above $83 IPO price",
+      "title_ko": "앤트로픽 주가, IPO 가격인 83달러보다 34.3% 높은 111.50달러로 개장",
+      "link": "https://cointelegraph.com/markets/anthropic-shares-expected-to-open-above-83-ipo-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-19 16:07 (한국시간 01:07)"
+    },
     {
       "title": "Here’s what happened in crypto today",
       "title_ko": "오늘의 암호화폐 소식입니다.",
       "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-19 13:48 (한국시간 22:48)"
-    },
-    {
-      "title": "Ethereum’s new DeFi security tool raises questions over censorship",
-      "title_ko": "이더리움의 새로운 DeFi 보안 도구, 검열에 대한 의문 제기",
-      "link": "https://cointelegraph.com/magazine/ethereums-new-defi-security-tool-raises-questions-over-censorship?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-19 13:30 (한국시간 22:30)"
-    },
-    {
-      "title": "Hong Kong adds Hyperliquid to list of ‘suspicious’ crypto platforms",
-      "title_ko": "홍콩, '의심스러운' 암호화폐 플랫폼 목록에 하이퍼리퀴드 추가",
-      "link": "https://cointelegraph.com/news/hyperliquid-hong-kong-regulators-alert-list?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-19 12:44 (한국시간 21:44)"
-    },
-    {
-      "title": "GTA VI publisher racks up nearly 3x Nvidia’s tokenized stock volume",
-      "title_ko": "GTA VI 퍼블리셔, Nvidia의 토큰화된 주식 물량의 거의 3배에 달하는 물량 확보",
-      "link": "https://cointelegraph.com/news/gta-vi-launch-tokenized-ttwo-trade-triple-nvidia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-19 12:33 (한국시간 21:33)"
-    },
-    {
-      "title": "Sweden’s H100 could tap Bitcoin trading pool to fund share buybacks",
-      "title_ko": "스웨덴의 H100, 자사주 매입 자금 조달을 위해 비트코인 거래 풀 활용 가능",
-      "link": "https://cointelegraph.com/news/swedens-h100-13m-q3-loss-share-buyback-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-19 11:19 (한국시간 20:19)"
     }
   ],
   "accounts": [
@@ -104,9 +104,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.5720372736625515,
-          "mark_price": 0.4245,
-          "pnl_pct": -77.37464696203594,
-          "unrealized_pnl": -106.22683703703711,
+          "mark_price": 0.4217,
+          "pnl_pct": -78.84308274179162,
+          "unrealized_pnl": -108.24283703703708,
           "funding_rate": 0.005
         },
         {
@@ -114,9 +114,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1065036324786325,
-          "mark_price": 0.07916,
-          "pnl_pct": -25.673896600774036,
-          "unrealized_pnl": -255.93640000000022,
+          "mark_price": 0.07763,
+          "pnl_pct": -27.110467320844972,
+          "unrealized_pnl": -270.2572000000001,
           "funding_rate": 0.005
         },
         {
@@ -124,9 +124,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.2573992657924157,
-          "mark_price": 0.1858,
-          "pnl_pct": -83.4492657607169,
-          "unrealized_pnl": -250.3396729166022,
+          "mark_price": 0.1838,
+          "pnl_pct": -85.78027474068767,
+          "unrealized_pnl": -257.3324729166022,
           "funding_rate": 0.005
         },
         {
@@ -134,19 +134,19 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.0492177356329259,
-          "mark_price": 0.03841,
-          "pnl_pct": -65.87707963770498,
-          "unrealized_pnl": -379.5136367501929,
-          "funding_rate": -0.00699883862578
+          "mark_price": 0.03861,
+          "pnl_pct": -64.65800689434495,
+          "unrealized_pnl": -372.49063675019295,
+          "funding_rate": -0.00888363825332
         },
         {
           "symbol": "ONDS/USDT:USDT",
           "side": "LONG",
           "leverage": "3",
           "entry_price": 5.795197475988096,
-          "mark_price": 4.422,
-          "pnl_pct": -71.0863166446608,
-          "unrealized_pnl": -105.73620565108341,
+          "mark_price": 4.297,
+          "pnl_pct": -77.55719190911523,
+          "unrealized_pnl": -115.36120565108341,
           "funding_rate": 0.0
         },
         {
@@ -154,9 +154,9 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.044739103909584,
-          "mark_price": 0.03764,
-          "pnl_pct": -15.86778296662136,
-          "unrealized_pnl": -154.76046522893122,
+          "mark_price": 0.03708,
+          "pnl_pct": -17.11948438900956,
+          "unrealized_pnl": -166.96846522893117,
           "funding_rate": 0.005
         },
         {
@@ -164,47 +164,47 @@
           "side": "LONG",
           "leverage": "5",
           "entry_price": 45.44674008810573,
-          "mark_price": 42.51,
-          "pnl_pct": -32.30968912635307,
-          "unrealized_pnl": -33.185162995594744,
-          "funding_rate": 0.010428717406879999
+          "mark_price": 42.59,
+          "pnl_pct": -31.42953798850567,
+          "unrealized_pnl": -32.281162995594684,
+          "funding_rate": 0.0
         }
       ],
       "spot": [
         {
           "coin": "SATS",
           "amount": 428210861000.8288,
-          "usd_val": 3248.835802413288
+          "usd_val": 3247.5511698302857
         },
         {
           "coin": "USDT",
-          "amount": 2192.862583405673,
-          "usd_val": 2190.5162204414287
+          "amount": 2155.4197309110536,
+          "usd_val": 2152.962552417815
         },
         {
           "coin": "NMR",
           "amount": 169.811742417125,
-          "usd_val": 1304.4938052483544
+          "usd_val": 1318.2485563841415
         },
         {
           "coin": "ORDI",
           "amount": 478.416663845,
-          "usd_val": 1303.685408977625
+          "usd_val": 1308.469575616075
         },
         {
           "coin": "AI",
           "amount": 53594.9157,
-          "usd_val": 710.1326330249999
+          "usd_val": 705.309090612
         },
         {
           "coin": "SAHARA",
           "amount": 120021.693985,
-          "usd_val": 661.55957724532
+          "usd_val": 659.8792735295301
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 3.278718
+          "usd_val": 3.201795
         }
       ]
     },
@@ -217,22 +217,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1181159963624914,
-          "mark_price": 0.07913,
-          "pnl_pct": -33.00653388457694,
-          "unrealized_pnl": -178.9457233038355,
+          "mark_price": 0.07758,
+          "pnl_pct": -34.318803219581454,
+          "unrealized_pnl": -186.06022330383553,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2304.1787935232683,
-          "usd_val": 2301.690280426263
+          "amount": 2297.0919781082684,
+          "usd_val": 2294.4962641730062
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 42.56297103136
+          "usd_val": 42.45486479144
         }
       ]
     }
