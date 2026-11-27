@@ -1,97 +1,97 @@
 {
-  "updated_at": "2026-11-27 08:50:55",
+  "updated_at": "2026-11-27 12:50:56",
   "market": {
     "fear_greed": {
-      "value": 11,
+      "value": 12,
       "classification": "Extreme Fear"
     },
     "funding_rates": {
-      "BTC": "+0.0003%",
-      "ETH": "+0.0080%"
+      "BTC": "+0.0098%",
+      "ETH": "+0.0059%"
     }
   },
   "movers_6h": [
     {
-      "symbol": "OL",
-      "change_pct": -3.924646781789632,
-      "current_price": 0.002448
-    },
-    {
-      "symbol": "ACU",
-      "change_pct": -3.181059657905727,
-      "current_price": 0.09283
-    },
-    {
-      "symbol": "SYRUP",
-      "change_pct": 2.079772079772084,
-      "current_price": 0.07166
+      "symbol": "W",
+      "change_pct": 9.394524593888443,
+      "current_price": 0.00963
     },
     {
       "symbol": "KGEN",
-      "change_pct": 1.8343051506316779,
-      "current_price": 0.08383
+      "change_pct": 6.069227121858701,
+      "current_price": 0.08948
     },
     {
-      "symbol": "ATH",
-      "change_pct": -1.6318887105403923,
-      "current_price": 0.003677
+      "symbol": "ZHONGJI",
+      "change_pct": 5.168637757336847,
+      "current_price": 72.03
     },
     {
-      "symbol": "PI",
-      "change_pct": -1.2931830777757236,
-      "current_price": 0.05343
+      "symbol": "SKHYNIX",
+      "change_pct": 4.74913826120261,
+      "current_price": 820.5
     },
     {
-      "symbol": "W",
-      "change_pct": 1.2789491876944348,
-      "current_price": 0.00879
+      "symbol": "XCU",
+      "change_pct": 4.166819903644579,
+      "current_price": 5.6648
     },
     {
-      "symbol": "ZBT",
-      "change_pct": 1.172562048075037,
-      "current_price": 0.05177
+      "symbol": "OL",
+      "change_pct": -3.5800482703137613,
+      "current_price": 0.002397
     },
     {
-      "symbol": "UNI",
-      "change_pct": 1.0206297502714377,
-      "current_price": 4.652
+      "symbol": "LAYER",
+      "change_pct": 3.314917127071821,
+      "current_price": 0.04862
     },
     {
-      "symbol": "ZKP",
-      "change_pct": 1.0044642857142836,
-      "current_price": 0.02715
+      "symbol": "SYRUP",
+      "change_pct": 3.1880378050500946,
+      "current_price": 0.07315
+    },
+    {
+      "symbol": "PUMP",
+      "change_pct": 2.94003868471954,
+      "current_price": 0.002661
+    },
+    {
+      "symbol": "RAY",
+      "change_pct": 2.4795285834545027,
+      "current_price": 1.3391
     }
   ],
   "news": [
     {
+      "title": "AI is driving a flood of crypto bug reports. Now it’s helping sort them",
+      "title_ko": "AI는 암호화폐 버그 보고서를 홍수로 몰아넣고 있습니다. 이제 정렬하는 데 도움이 됩니다.",
+      "link": "https://cointelegraph.com/news/ai-driving-flood-of-crypto-bug-reports-now-helping-sort-them?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-27 01:47 (한국시간 10:47)"
+    },
+    {
+      "title": "Privacy coins face diverging fortunes as KuCoin moves to drop Monero",
+      "title_ko": "KuCoin이 Monero를 출시함에 따라 개인 정보 보호 동전은 다양한 행운에 직면합니다.",
+      "link": "https://cointelegraph.com/news/privacy-coins-kucoin-drop-monero-grayscale-zcash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "11-27 00:35 (한국시간 09:35)"
+    },
+    {
       "title": "‘Very racist’ Netflix SBF series, BitMart’s $319M shortfall: Asia Express",
-      "title_ko": "'매우 인종차별적인' 넷플릭스 SBF 시리즈, BitMart의 3억 1,900만 달러 적자: 아시아 익스프레스",
+      "title_ko": "'매우 인종차별적인' 넷플릭스 SBF 시리즈, 비트마트의 3억 1900만 달러 부족: 아시아 익스프레스",
       "link": "https://cointelegraph.com/magazine/very-racist-netflix-sbf-series-bitmarts-319m-shortfall-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-26 22:39 (한국시간 07:39)"
     },
     {
       "title": "Here’s what happened in crypto today",
-      "title_ko": "오늘의 암호화폐 소식입니다.",
+      "title_ko": "오늘 암호화폐 업계에서 일어난 일은 다음과 같습니다",
       "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-26 22:12 (한국시간 07:12)"
     },
     {
       "title": "BNB Chain details new layer-1 for trading, private finance and AI",
-      "title_ko": "BNB 체인, 거래, 사모 금융 및 AI를 위한 새로운 레이어-1 세부 정보 공개",
+      "title_ko": "BNB 체인은 거래, 민간 금융 및 AI를 위한 새로운 레이어 1을 자세히 설명합니다.",
       "link": "https://cointelegraph.com/news/bnb-chain-details-new-layer-1-trading-private-finance-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "published": "11-26 21:42 (한국시간 06:42)"
-    },
-    {
-      "title": "Binance completes withdrawal recovery four weeks after $6.3B hack",
-      "title_ko": "바이낸스, 63억 달러 해킹 4주 만에 인출 복구 완료",
-      "link": "https://cointelegraph.com/news/binance-completes-withdrawal-recovery-four-weeks-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-26 21:33 (한국시간 06:33)"
-    },
-    {
-      "title": "UK is ‘getting it wrong’ on DeFi regulation, says Coinbase",
-      "title_ko": "코인베이스, \"영국이 디파이(DeFi) 규제를 '잘못 이해하고 있다'\"고 말함",
-      "link": "https://cointelegraph.com/news/uk-wrong-defi-regulation-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "published": "11-26 21:13 (한국시간 06:13)"
     }
   ],
   "accounts": [
@@ -104,39 +104,39 @@
           "side": "SHORT",
           "leverage": "3",
           "entry_price": 2.800001243394467,
-          "mark_price": 2.706,
-          "pnl_pct": 10.07155731979341,
-          "unrealized_pnl": 15.115399937830334,
-          "funding_rate": -0.06779013147994001
+          "mark_price": 2.788,
+          "pnl_pct": 1.28584693554472,
+          "unrealized_pnl": 1.9297999378303579,
+          "funding_rate": -0.05226838303679
         },
         {
           "symbol": "NIGHT/USDT:USDT",
           "side": "SHORT",
           "leverage": "3",
           "entry_price": 0.048663,
-          "mark_price": 0.048452,
-          "pnl_pct": 1.3007829357006,
-          "unrealized_pnl": 0.9705999999999813,
-          "funding_rate": -0.00184504248923
+          "mark_price": 0.04858,
+          "pnl_pct": 0.51168238702917,
+          "unrealized_pnl": 0.3817999999999988,
+          "funding_rate": 0.005
         },
         {
           "symbol": "AERO/USDT:USDT",
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.5720372736625515,
-          "mark_price": 0.4012,
-          "pnl_pct": -89.59413041500308,
-          "unrealized_pnl": -123.0028370370371,
-          "funding_rate": 0.00240203257578
+          "mark_price": 0.409,
+          "pnl_pct": -85.50348788568361,
+          "unrealized_pnl": -117.38683703703713,
+          "funding_rate": 0.005
         },
         {
           "symbol": "AT/USDT:USDT",
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.1065036324786325,
-          "mark_price": 0.05299,
-          "pnl_pct": -50.24582845976523,
-          "unrealized_pnl": -500.8876000000001,
+          "mark_price": 0.05206,
+          "pnl_pct": -51.11903811314169,
+          "unrealized_pnl": -509.59240000000017,
           "funding_rate": 0.005
         },
         {
@@ -144,9 +144,9 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.2573992657924157,
-          "mark_price": 0.1658,
-          "pnl_pct": -106.75935556042444,
-          "unrealized_pnl": -320.2676729166022,
+          "mark_price": 0.1695,
+          "pnl_pct": -102.44698894747853,
+          "unrealized_pnl": -307.3309929166021,
           "funding_rate": 0.005
         },
         {
@@ -154,19 +154,19 @@
           "side": "LONG",
           "leverage": "3",
           "entry_price": 0.0492177356329259,
-          "mark_price": 0.04159,
-          "pnl_pct": -46.49382301828039,
-          "unrealized_pnl": -133.92015450727996,
-          "funding_rate": -0.39712089788984
+          "mark_price": 0.04226,
+          "pnl_pct": -42.40992932802429,
+          "unrealized_pnl": -122.15696450728001,
+          "funding_rate": -0.6901783646584101
         },
         {
           "symbol": "ONDS/USDT:USDT",
           "side": "LONG",
           "leverage": "3",
           "entry_price": 5.795197475988096,
-          "mark_price": 3.935,
-          "pnl_pct": -96.29684667497516,
-          "unrealized_pnl": -143.2352056510834,
+          "mark_price": 4.074,
+          "pnl_pct": -89.10123338090189,
+          "unrealized_pnl": -132.53220565108342,
           "funding_rate": 0.0
         },
         {
@@ -174,42 +174,42 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.044739103909584,
-          "mark_price": 0.0396,
-          "pnl_pct": -11.486827988262641,
-          "unrealized_pnl": -112.03246522893114,
+          "mark_price": 0.03946,
+          "pnl_pct": -11.79975334385969,
+          "unrealized_pnl": -115.08446522893117,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2538.555987685556,
-          "usd_val": 2535.2812504614417
+          "amount": 2563.646182337257,
+          "usd_val": 2560.287805838395
         },
         {
           "coin": "SATS",
           "amount": 342568688800.8288,
-          "usd_val": 2482.2527190508054
+          "usd_val": 2532.2677476157264
         },
         {
           "coin": "ORDI",
           "amount": 478.416663845,
-          "usd_val": 1253.930075937745
+          "usd_val": 1286.94082574305
         },
         {
           "coin": "NMR",
           "amount": 169.811742417125,
-          "usd_val": 1246.2483775992805
+          "usd_val": 1256.9465173715594
         },
         {
           "coin": "SAHARA",
           "amount": 120021.693985,
-          "usd_val": 618.7118324926751
+          "usd_val": 625.673090743805
         },
         {
           "coin": "SPACE",
           "amount": 999.0,
-          "usd_val": 3.8631330000000004
+          "usd_val": 4.018977
         }
       ]
     },
@@ -222,22 +222,22 @@
           "side": "LONG",
           "leverage": "1",
           "entry_price": 0.096687979805322,
-          "mark_price": 0.05299,
-          "pnl_pct": -45.19484210271682,
-          "unrealized_pnl": -425.61832330383623,
+          "mark_price": 0.05206,
+          "pnl_pct": -46.15669899730963,
+          "unrealized_pnl": -434.67652330383623,
           "funding_rate": 0.005
         }
       ],
       "spot": [
         {
           "coin": "USDT",
-          "amount": 2056.0898545982677,
-          "usd_val": 2053.437498685836
+          "amount": 2047.006028658268,
+          "usd_val": 2044.263040579866
         },
         {
           "coin": "SAHARA",
           "amount": 7721.87428,
-          "usd_val": 39.8062619134
+          "usd_val": 40.254130621639995
         }
       ]
     }
